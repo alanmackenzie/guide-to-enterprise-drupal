@@ -5,7 +5,7 @@ Patterns and Anti-Patterns for Enterprise Drupal Development.
 
 # General Patterns
 
-## Drupal as a packaged product.
+### Drupal as a packaged product.
 
 ### Go "All In".
 
