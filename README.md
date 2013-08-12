@@ -45,6 +45,16 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ## Tactical Anti-Patterns
 
+### Using Memcache as the cache backend for ```cache_form```.
+
+Drupal's Form API uses a token unique to each user per form to prevent [CSRF](http://en.wikipedia.org/wiki/CSRF).
+
+The downside to this is that ```cache_form```, the place where the CSRF busting token is stored, should always use persistant storage. Memcache uses a [LRU](http://en.wikipedia.org/wiki/Cache_algorithms#Least_Recently_Used) algorithm to evict unpopular cache objects, making it incompatible with ```cache_form```.
+
+>> "An unrecoverable error occurred. This form was missing from the server cache. Try reloading the page and submitting again."
+
+If you're getting intermittant reports about the above error message it's likely that you're using non-persistant storage for the ```cache_form``` backend.
+
 ### Forgetting to filter the output of ```variable_get()```.
 
 Even if you are capturing the value of this persistant variable in ```$conf[]``` or setting it via ```variable_set()``` in an update hook it is best to code defensively in case a system settings form is added is added later on.
