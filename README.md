@@ -3,7 +3,10 @@ Guide to Enterprise Drupal
 
 Patterns and Anti-Patterns for Enterprise Drupal Development.
 
-# General 
+# General Patterns
+
+## Drupal as a packaged product.
+
 # Back-end Patterns
 
 ## Strategic Patterns
@@ -23,6 +26,8 @@ Patterns and Anti-Patterns for Enterprise Drupal Development.
 ### Deploying changes via update hooks.
 
 ### Writing good drush commands at scale.
+
+#### Memory issues and ```drupal_static_reset()```.
 
 # Anti-Patterns
 
@@ -44,6 +49,10 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Abusing ```drupal_goto()```.
 
+### Using ```exit()``` instead of ```drupal_exit()```.
+
+### Using ```static $cache``` instead of ```drupal_static()```.
+
 # Front-end Patterns
 
 ## Strategic Patterns
@@ -52,7 +61,7 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 # Credits
 
-## Authors & Technical Review
+## Authors
 
 * Alan MacKenzie
 
