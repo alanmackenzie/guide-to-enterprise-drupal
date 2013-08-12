@@ -29,9 +29,9 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Project Directory Layout.
 
-### Use Entity Field Query.
+### Use Entity Field Query (EFQ).
 
-### Use Entity Metadata Wrapper.
+### Use Entity Metadata Wrapper (EMW).
 
 ### Managing and capturing configuration via persistant variables.
 
