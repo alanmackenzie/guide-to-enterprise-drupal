@@ -3,13 +3,19 @@ Guide to Enterprise Drupal
 
 Patterns and Anti-Patterns for Enterprise Drupal Development.
 
-# General Patterns
+# Project Patterns
 
 ### Drupal as a packaged product.
 
 ### Go "All In".
 
-###
+### Migrating to Drupal.
+
+Drupal has an excellent [migration framework](https://drupal.org/project/migrate), you should steer well clear of any traditional [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) process.
+
+### Drupal People.
+
+### Managing Complexity.
 
 # Back-end Patterns
 
@@ -72,6 +78,12 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 ## Tactical Anti-Patterns
 
 ### Not removing 'dead' CSS supplied by contrib modules.
+
+# Migration Patterns
+
+## Strategic Patterns
+
+### Breaking Migrations into smaller chunks.
 
 # Credits
 
