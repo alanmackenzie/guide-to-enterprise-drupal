@@ -7,6 +7,10 @@ Patterns and Anti-Patterns for Enterprise Drupal Development.
 
 ## Drupal as a packaged product.
 
+### Go "All In".
+
+###
+
 # Back-end Patterns
 
 ## Strategic Patterns
@@ -16,6 +20,8 @@ Patterns and Anti-Patterns for Enterprise Drupal Development.
 ### Configuration management workflow.
 
 ## Tactical Patterns.
+
+### Project Directory Layout.
 
 ### Use Entity Field Query.
 
@@ -58,6 +64,14 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 ## Strategic Patterns
 
 ### SMACCS.
+
+## Strategic Anti-Patterns
+
+## Tactical Patterns
+
+## Tactical Anti-Patterns
+
+### Not removing 'dead' CSS supplied by contrib modules.
 
 # Credits
 
