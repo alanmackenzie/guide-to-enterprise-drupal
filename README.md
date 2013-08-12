@@ -3,11 +3,27 @@ Guide to Enterprise Drupal
 
 Patterns and Anti-Patterns for Enterprise Drupal Development.
 
+# Patterns
+
+# Tactical Patterns.
+
+#### Use Entity Field Query.
+
+
+#### Use Entity Metadata Wrapper.
+
+
+#### Managing and capturing configuration via persistant variables.
+
+
+#### Deploying changes via update hooks.
+
+
 
 
 # Anti-Patterns
 
-## Tactical Anti-Patterns 
+## Tactical Anti-Patterns
 
 #### Forgetting to filter the output of ```variable_get()```.
 
