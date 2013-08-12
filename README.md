@@ -1,4 +1,4 @@
-guide-to-enterprise-drupal
+Guide to Enterprise Drupal
 ==========================
 
 Patterns and Anti-Patterns for Enterprise Drupal Development.
