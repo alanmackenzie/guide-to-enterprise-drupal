@@ -81,7 +81,57 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Using ```static $cache``` instead of ```drupal_static()```.
 
-### Hardcoding language values such as ```'und'```.
+### Hardcoding values.
+
+Using hardcoded values make code harder to read and refactor. Be kind to your reviewer and use the constants that Drupal supplies.
+
+__Wrong Example (1):__
+
+```php
+global $user;
+$node = new stdClass();
+$node->title = t('Example title');
+$node->type = "example_bundle";
+$node->language = 'und';
+$node->uid = $user->uid;
+$node->status = 1;
+$node->promote = 1;
+$node->comment = 0;
+```
+
+_Right Example (1):_
+```php
+global $user;
+$node = new stdClass();
+$node->title = t('Example title');
+$node->type = "example_bundle";
+$node->language = LANGUAGE_NONE;
+$node->uid = $user->uid;
+$node->status = NODE_PUBLISHED;
+$node->promote = NODE_PROMOTED;
+$node->comment = COMMENT_NODE_OPEN;
+```
+
+__Wrong Example (2):__
+```php
+
+if ($file->status = 1) {
+  return;
+}
+```
+
+_Right Example (2):_
+```php
+
+if ($file->status = FILE_STATUS_PERMANENT) {
+  return;
+}
+```
+
+* [https://api.drupal.org/api/drupal/constants/7](Full list of constants)
+
+
+### Being language oblivious.
 
 ### Trusting the block cache.
 
