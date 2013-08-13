@@ -154,6 +154,12 @@ TODO:
 
 ### Not removing 'dead' CSS supplied by contrib modules.
 
+### Being function shy.
+
+* l()
+* url()
+* theme_list()
+
 # Migration Patterns
 
 ## Strategic Patterns
