@@ -95,6 +95,44 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Breaking Migrations into smaller chunks.
 
+# Example Configuration
+
+```php
+
+/**
+ * Flood prevention.
+ * 
+ * @note You may wish to relax these during the launch period of any new
+ * site and gradually tighten them up as you understand your user base more.
+ *
+ * @see user_failed_login_user_window
+ * @see user_failed_login_ip_window
+ */
+$conf['user_failed_login_user_limit'] = 7;
+$conf['user_failed_login_ip_limit'] = 50;
+
+/**
+ * Akamai configuration.
+ *
+ * @note If a complete list of reverse proxies is not available in your
+ * environment (for example, if you use a CDN) you may set the
+ * $_SERVER['REMOTE_ADDR'] variable directly in settings.php.
+ * Be aware, however, that it is likely that this would allow IP
+ * address spoofing unless more advanced precautions are taken.
+ *
+ * @note We use Akamai's KONA Site Defender to prevent attackers hitting
+ * origin directly.
+ *
+ * @warning This piece of code must come after Acquia's own reverse
+ * proxy configuration to work.
+ */
+
+if (isset($_SERVER['HTTP_TRUE_CLIENT_IP'])) {
+  $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_TRUE_CLIENT_IP'];
+}
+
+```
+
 # Credits
 
 ## Authors
