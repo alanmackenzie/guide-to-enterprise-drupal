@@ -99,6 +99,34 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ```php
 
+ /**
+ * Set session lifetime (in seconds), i.e. the time from the user's last visit
+ * to the active session may be deleted by the session garbage collector. When
+ * a session is deleted, authenticated users are logged out, and the contents
+ * of the user's $_SESSION variable is discarded.
+ *
+ * @note Drupals default value for this setting is 200000 seconds or 2.3 days,
+ * this is a sensible default but one which likely hurts your user engagement
+ * by forcing users to repeatedly login. Below we have upped this value to 3
+ * weeks.
+ *
+ * @warning Depending on the size and activity of your user base you may need
+ * to monitor the size of your ```sessions``` table.
+ */
+ini_set('session.gc_maxlifetime', 1814400);
+
+/**
+ * Set session cookie lifetime (in seconds), i.e. the time from the session is
+ * created to the cookie expires, i.e. when the browser is expected to discard
+ * the cookie. The value 0 means "until the browser is closed".
+ *
+ * @see The note for session lifetime.
+ *
+ * @note The default value is only 2000000 seconds or 23 days. Below we have
+ * upped this value to a year.
+ */
+ini_set('session.cookie_lifetime', 31557600);
+
 /**
  * Flood prevention.
  * 
