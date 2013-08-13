@@ -33,6 +33,12 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Use Entity Metadata Wrapper (EMW).
 
+TODO:
+
+Mention [method chaining](http://en.wikipedia.org/wiki/Method_chaining)
+Lazy load.
+value() v raw().
+
 ### Managing and capturing configuration via persistant variables.
 
 ### Deploying changes via update hooks.
