@@ -135,6 +135,11 @@ if ($file->status = FILE_STATUS_PERMANENT) {
 
 ### Trusting the block cache.
 
+TODO:
+
+* Hitting memcache when you dont need to.
+* node_save() clearing the block cache.
+
 # Front-end Patterns
 
 ## Strategic Patterns
