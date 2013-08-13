@@ -99,6 +99,8 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 # Example Configuration
 
+## Production Configuration.
+
 ```php
 
 /**
@@ -193,8 +195,25 @@ $conf['cache_lifetime'] = 0;
  * enabling this.
  */
 $conf['redirect_auto_redirect'] = FALSE;
+```
+## Local Developer Configuration.
 
+```php
+/**
+ * Views configuration.
+ */
+$conf['views_ui_show_sql_query'] = TRUE;
+$conf['views_ui_show_sql_query_where'] = 'above';
+$conf['views_ui_show_performance_statistics'] = TRUE;
 
+/**
+ * Proxy settings.
+ */
+$conf['proxy_server'] = 'www-proxy.example.com';
+$conf['proxy_port'] = '80';
+
+// drupal_http_request() does not support HTTPS.
+define('ACQUIA_DEVELOPMENT_NOSSL', TRUE);
 ```
 
 # Credits
