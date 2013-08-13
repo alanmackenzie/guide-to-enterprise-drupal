@@ -171,6 +171,8 @@ if (isset($_SERVER['HTTP_TRUE_CLIENT_IP'])) {
  */
 $conf['cache_lifetime'] = 0;
 
+// @TODO Redirect module, automatic creation of redirects and loops.
+
 ```
 
 # Credits
