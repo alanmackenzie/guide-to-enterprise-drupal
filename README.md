@@ -75,6 +75,8 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Using ```static $cache``` instead of ```drupal_static()```.
 
+### Trusting the block cache.
+
 # Front-end Patterns
 
 ## Strategic Patterns
@@ -158,6 +160,16 @@ $conf['user_failed_login_ip_limit'] = 50;
 if (isset($_SERVER['HTTP_TRUE_CLIENT_IP'])) {
   $_SERVER['REMOTE_ADDR'] = $_SERVER['HTTP_TRUE_CLIENT_IP'];
 }
+
+/**
+ * Caching
+ *
+ * @note cache_lifetime is a global lock that is only useful if you're running
+ * cron extremely regularly or have it set to a very high value making it useless
+ * for most large Drupal sites that do event based purging or are highly dynamic.
+ * Setting cache_lifetime to 0 makes debugging caching issues much easier.
+ */
+$conf['cache_lifetime'] = 0;
 
 ```
 
