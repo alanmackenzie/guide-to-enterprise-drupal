@@ -81,6 +81,8 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Using ```static $cache``` instead of ```drupal_static()```.
 
+### Hardcoding language values such as ```'und'```.
+
 ### Trusting the block cache.
 
 # Front-end Patterns
