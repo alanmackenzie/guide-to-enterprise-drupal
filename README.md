@@ -185,7 +185,15 @@ if (isset($_SERVER['HTTP_TRUE_CLIENT_IP'])) {
  */
 $conf['cache_lifetime'] = 0;
 
-// @TODO Redirect module, automatic creation of redirects and loops.
+/**
+ * Redirect configuration.
+ *
+ * @note The redirect module has a nasty habit of creating redirect loops
+ * when allowed to automatically create redirects. Think carefully before
+ * enabling this.
+ */
+$conf['redirect_auto_redirect'] = FALSE;
+
 
 ```
 
