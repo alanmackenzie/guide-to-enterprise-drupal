@@ -101,6 +101,19 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ```php
 
+/**
+ * Anti-DDoS image preset security token.
+ *
+ * Disabling this does not increase your cache hit ratio, the itok
+ * query parameter is added to the images anyway. However the good
+ * news is that the itok parameter will stay the same provided you
+ * do not change the private key or hash salt for your Drupal instance.
+ *
+ * @see image_style_path_token()
+ */
+// $conf['image_allow_insecure_derivatives'] = TRUE;
+
+
  /**
  * Set session lifetime (in seconds), i.e. the time from the user's last visit
  * to the active session may be deleted by the session garbage collector. When
