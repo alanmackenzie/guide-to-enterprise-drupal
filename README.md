@@ -309,7 +309,7 @@ $conf['cache_lifetime'] = 0;
  * do not want pathauto to modify the alias of the target entity on update.
  */
 $conf['redirect_auto_redirect'] = FALSE;
-$conf['pathauto_update_action'] = 0;
+$conf['pathauto_update_action'] = FALSE;
 
 
 // TODO disabling poor mans cron.
