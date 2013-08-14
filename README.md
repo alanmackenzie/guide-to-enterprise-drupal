@@ -3,6 +3,8 @@ Guide to Enterprise Drupal
 
 Patterns and Anti-Patterns for Enterprise Drupal Development.
 
+Contribution welcome and encouraged, please create pull requests.
+
 # Project Patterns
 
 ### Drupal as a packaged product.
