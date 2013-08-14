@@ -39,6 +39,10 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Configuration management workflow.
 
+## Strategic Anti-Patterns
+
+### Module explosion.
+
 ## Tactical Patterns.
 
 ### Project Directory Layout.
@@ -61,9 +65,7 @@ value() v raw().
 
 ### Writing good drush commands at scale.
 
-#### Memory issues and ```drupal_static_reset()```.
-
-# Anti-Patterns
+### Memory issues and ```drupal_static_reset()```.
 
 ## Tactical Anti-Patterns
 
