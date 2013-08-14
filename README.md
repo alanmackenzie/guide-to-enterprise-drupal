@@ -85,6 +85,8 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Using ```static $cache``` instead of ```drupal_static()```.
 
+### ```views_get_view()``` and static caching.
+
 ### Hardcoding values.
 
 Using hardcoded values make code harder to read and refactor. Be kind to your reviewer and use the [constants](https://api.drupal.org/api/drupal/constants/7) that Drupal supplies.
