@@ -206,6 +206,8 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 * blah blah concurrency.
 * https://drupal.org/project/role_memory_limit
 
+### Cron jobs.
+
 # Example Drupal Configuration
 
 ## Production Configuration.
