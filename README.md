@@ -47,6 +47,8 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Use Entity Metadata Wrapper (EMW).
 
+### Views, total_rows, pagination and count().
+
 TODO:
 
 Mention [method chaining](http://en.wikipedia.org/wiki/Method_chaining)
