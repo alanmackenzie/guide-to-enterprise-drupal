@@ -159,11 +159,14 @@ TODO:
 * file structure.
 * Documenting css
 * Drupal centric css structure.
-* 
+
 ### Theme structure
 
-* Drupal centric directory structure due to reuse.
-* 
+### CSS testing.
+
+* [https://drupal.org/project/styleguide](Styleguide module)
+* Hardy.
+
 ## Strategic Anti-Patterns
 
 ## Tactical Patterns
