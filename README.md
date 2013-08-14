@@ -89,7 +89,7 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Hardcoding values.
 
-Using hardcoded values make code harder to read and refactor. Be kind to your reviewer and use the constants that Drupal supplies.
+Using hardcoded values make code harder to read and refactor. Be kind to your reviewer and use the [https://api.drupal.org/api/drupal/constants/7](constants) that Drupal supplies.
 
 __Wrong Example (1):__
 
@@ -133,9 +133,6 @@ if ($file->status = FILE_STATUS_PERMANENT) {
   return;
 }
 ```
-
-* [https://api.drupal.org/api/drupal/constants/7](Full list of constants)
-
 
 ### Being language oblivious.
 
