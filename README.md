@@ -144,12 +144,9 @@ if ($file->status == FILE_STATUS_PERMANENT) {
 
 ### Being language oblivious.
 
-### Trusting the block cache.
-
 ### Using ```time()``` instead of ```REQUEST_TIME```.
 
-# system call over head.
-# strace example.
+### Trusting the block cache.
 
 TODO:
 
@@ -208,6 +205,9 @@ TODO:
 ### Cron Jobs.
 
 ### Using strace to debug black boxes.
+
+* system call over head.
+* strace example.
 
 ## Full Stack Anti-Patterns.
 
