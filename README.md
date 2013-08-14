@@ -359,6 +359,13 @@ $conf['proxy_port'] = '80';
 
 // drupal_http_request() does not support HTTPS.
 define('ACQUIA_DEVELOPMENT_NOSSL', TRUE);
+
+/**
+ * The stage_file_proxy module prevents you from having to download the entire files
+ * directory from production.
+ */
+$conf['stage_file_proxy_origin'] = 'http://www.example.com';
+$conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 ```
 
 ## ```drushrc.php``` Configuration.
