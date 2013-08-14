@@ -310,6 +310,9 @@ $conf['cache_lifetime'] = 0;
  */
 $conf['redirect_auto_redirect'] = FALSE;
 $conf['pathauto_update_action'] = 0;
+
+
+// TODO disabling poor mans cron.
 ```
 
 ## Local Developer Configuration.
