@@ -221,7 +221,7 @@ TODO:
  * weeks.
  *
  * @warning Depending on the size and activity of your user base you may need
- * to monitor the size of your ```sessions``` table.
+ * to monitor the size of your sessions table.
  */
 ini_set('session.gc_maxlifetime', 1814400);
 
