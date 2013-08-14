@@ -304,8 +304,12 @@ $conf['cache_lifetime'] = 0;
  * @note The redirect module has a nasty habit of creating redirect loops
  * when allowed to automatically create redirects. Think carefully before
  * enabling this.
+ *
+ * @note If you're disabling the automatic creation of redirects you probably
+ * do not want pathauto to modify the alias of the target entity on update.
  */
 $conf['redirect_auto_redirect'] = FALSE;
+$conf['pathauto_update_action'] = 0;
 ```
 
 ## Local Developer Configuration.
