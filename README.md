@@ -192,7 +192,11 @@ TODO:
 
 # Drupal in a Full Stack Environment.
 
-## Full Stack Anti-Patterns
+## Full Stack Patterns.
+
+### Cron Jobs.
+
+## Full Stack Anti-Patterns.
 
 ### Using Memcache as the cache backend for ```cache_form```.
 
@@ -212,7 +216,10 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 * blah blah concurrency.
 * https://drupal.org/project/role_memory_limit
 
-### Cron jobs.
+### Not designing with page caching in mind.
+
+* Dialogue
+* bring in engineers early.
 
 # Example Drupal Configuration
 
