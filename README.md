@@ -17,6 +17,12 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Managing Complexity.
 
+### Developer workflow.
+
+* Writing good commit messages.
+* Correct use of revision control.
+* Feature branching.
+
 ### Inline documentation.
 
 * Documentation needs to be living and breathing.
