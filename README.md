@@ -3,7 +3,7 @@ Guide to Enterprise Drupal
 
 Patterns and Anti-Patterns for Enterprise Drupal Development.
 
-Contribution welcome and encouraged, please create pull requests.
+External contribution is welcome and encouraged.
 
 # Project Patterns
 
