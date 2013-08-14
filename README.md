@@ -157,6 +157,8 @@ TODO:
 * Documenting css
 * Drupal centric css structure.
 
+# AJAX.
+
 ### Theme structure
 
 ### CSS testing.
