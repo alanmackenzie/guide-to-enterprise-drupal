@@ -127,7 +127,7 @@ $node->comment = COMMENT_NODE_OPEN;
 __Wrong Example (2):__
 ```php
 
-if ($file->status = 1) {
+if ($file->status == 1) {
   return;
 }
 ```
@@ -135,7 +135,7 @@ if ($file->status = 1) {
 _Right Example (2):_
 ```php
 
-if ($file->status = FILE_STATUS_PERMANENT) {
+if ($file->status == FILE_STATUS_PERMANENT) {
   return;
 }
 ```
