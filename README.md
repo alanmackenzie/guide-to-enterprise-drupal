@@ -81,6 +81,10 @@ _Right Example:_
 print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="external">';
 ```
 
+### Unsetting form elements.
+
+* Using '#access' instead of unset().
+
 ### Abusing ```drupal_goto()```.
 
 ### Using ```exit()``` instead of ```drupal_exit()```.
@@ -140,6 +144,11 @@ if ($file->status == FILE_STATUS_PERMANENT) {
 
 ### Trusting the block cache.
 
+### Using ```time()``` instead of ```REQUEST_TIME```.
+
+# system call over head.
+# strace example.
+
 TODO:
 
 * Hitting memcache when you dont need to.
@@ -195,6 +204,8 @@ TODO:
 ## Full Stack Patterns.
 
 ### Cron Jobs.
+
+### Using strace to debug black boxes.
 
 ## Full Stack Anti-Patterns.
 
