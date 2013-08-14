@@ -17,6 +17,12 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Managing Complexity.
 
+### Inline documentation.
+
+* Documentation needs to be living and breathing.
+* Revision control.
+* Tools.
+
 # Back-end Patterns
 
 ## Strategic Patterns
@@ -146,6 +152,18 @@ TODO:
 
 ### SMACCS.
 
+### Compass & SASS.
+
+* High res.
+* extends.
+* file structure.
+* Documenting css
+* Drupal centric css structure.
+* 
+### Theme structure
+
+* Drupal centric directory structure due to reuse.
+* 
 ## Strategic Anti-Patterns
 
 ## Tactical Patterns
@@ -159,6 +177,8 @@ TODO:
 * l()
 * url()
 * theme_list()
+
+### Push complexity into modules.
 
 # Migration Patterns
 
