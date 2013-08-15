@@ -83,6 +83,11 @@ _Right Example:_
 print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="external">';
 ```
 
+### Abusing ```variable_set()```.
+
+* ```cache_bootstrap```
+* deadlock.
+* 
 ### Unsetting form elements.
 
 * Using '#access' instead of unset().
@@ -203,6 +208,10 @@ TODO:
 ## Full Stack Patterns.
 
 ### Cron Jobs.
+
+* HA.
+* Locks (cache_bootstrap?).
+* unix cron keep it simple.
 
 ### Using strace to debug black boxes.
 
