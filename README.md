@@ -158,6 +158,9 @@ TODO:
 * Hitting memcache when you dont need to.
 * node_save() clearing the block cache.
 
+### Deleting modules from revision control before uninstalling them.
+
+
 # Front-end Patterns
 
 ## Strategic Patterns
