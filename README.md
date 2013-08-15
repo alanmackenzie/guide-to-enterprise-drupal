@@ -209,6 +209,8 @@ TODO:
 * system call over head.
 * strace example.
 
+### Using memkeys to debug memcache.
+
 ## Full Stack Anti-Patterns.
 
 ### Using Memcache as the cache backend for ```cache_form```.
