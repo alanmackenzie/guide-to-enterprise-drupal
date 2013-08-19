@@ -358,7 +358,6 @@ $conf['cache_lifetime'] = 0;
  */
 $conf['cron_safe_threshold'] = 0;
 
-
 /**
  * Redirect.
  *
