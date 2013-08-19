@@ -87,7 +87,7 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 * ```cache_bootstrap```
 * deadlock.
-* 
+
 ### Unsetting form elements.
 
 * Using '#access' instead of unset().
