@@ -348,7 +348,19 @@ if (isset($_SERVER['HTTP_TRUE_CLIENT_IP'])) {
 $conf['cache_lifetime'] = 0;
 
 /**
- * Redirect configuration.
+ * Cron
+ *
+ * Rather than have cron run in an ad-hoc manner at the end of a request it is
+ * a better idea to have it run at set times through drush and log all of the
+ * output. This makes debugging easier and the system more predictable.
+ *
+ * @see drupal_page_footer()
+ */
+$conf['cron_safe_threshold'] = 0;
+
+
+/**
+ * Redirect.
  *
  * @note The redirect module has a nasty habit of creating redirect loops
  * when allowed to automatically create redirects. Think carefully before
@@ -361,7 +373,6 @@ $conf['redirect_auto_redirect'] = FALSE;
 $conf['pathauto_update_action'] = FALSE;
 
 
-// TODO disabling poor mans cron.
 ```
 
 ## Local Developer Configuration.
