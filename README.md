@@ -297,6 +297,15 @@ ini_set('session.gc_maxlifetime', 1814400);
 ini_set('session.cookie_lifetime', 31557600);
 
 /**
+ * One-time login link.
+ *
+ * @note If you're using this for email verification you're likely hurting user
+ * engagement with the default value of 1 day. Below we've upped the value to
+ * 3 days.
+ */
+$conf['user_password_reset_timeout'] = 259200;
+
+/**
  * Flood prevention.
  * 
  * @note You may wish to relax these during the launch period of any new
@@ -309,7 +318,7 @@ $conf['user_failed_login_user_limit'] = 7;
 $conf['user_failed_login_ip_limit'] = 50;
 
 /**
- * Akamai configuration.
+ * Akamai.
  *
  * @note If a complete list of reverse proxies is not available in your
  * environment (for example, if you use a CDN) you may set the
