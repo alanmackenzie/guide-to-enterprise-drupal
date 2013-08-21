@@ -376,7 +376,7 @@ $conf['cron_safe_threshold'] = 0;
 $conf['field_purge_batch_size'] = 10000;
 
 /**
- * Redirect.
+ * Redirect
  *
  * @note The redirect module has a nasty habit of creating redirect loops
  * when allowed to automatically create redirects. Think carefully before
@@ -387,6 +387,13 @@ $conf['field_purge_batch_size'] = 10000;
  */
 $conf['redirect_auto_redirect'] = FALSE;
 $conf['pathauto_update_action'] = FALSE;
+
+/**
+ * Locking API
+ * 
+ * TODO: Rationale.
+ */
+$conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
 
 
 ```
