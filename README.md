@@ -358,6 +358,23 @@ $conf['cache_lifetime'] = 0;
 $conf['cron_safe_threshold'] = 0;
 
 /**
+ * Field API
+ *
+ * Once you delete a field the actual data is not immediately removed, you will
+ * see tables name field_deleted_data_n and field_deleted_revision_n. BY default
+ * field cron will remove 10 items from these tables per batch run. If you have
+ * a large number of entities completely removing a field could take years.
+ *
+ * @note You can see which fields are currently in the process of being deleted
+ * by running a query such as this:
+ *   select field_name, type from field_config where deleted = 1;
+ *
+ * @see field_cron()
+ * @see field_purge_batch()
+ */
+$conf['field_purge_batch_size'] = 10000;
+
+/**
  * Redirect.
  *
  * @note The redirect module has a nasty habit of creating redirect loops
