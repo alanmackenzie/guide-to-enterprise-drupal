@@ -303,6 +303,7 @@ ini_set('session.cookie_lifetime', 31557600);
  * 3 days.
  */
 $conf['user_password_reset_timeout'] = 259200;
+// TODO Double check the registration validation email uses this.
 
 /**
  * Flood prevention.
