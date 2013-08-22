@@ -291,9 +291,11 @@ ini_set('session.gc_maxlifetime', 1814400);
  * @see The note for session lifetime.
  *
  * @note The default value is only 2000000 seconds or 23 days. Below we have
- * upped this value to a year.
+ * upped this value to 90 days.
+ *
+ * @note If you want conditional lifetimes use: https://drupal.org/project/remember_me
  */
-ini_set('session.cookie_lifetime', 31557600);
+ini_set('session.cookie_lifetime', 7776000);
 
 /**
  * One-time login link.
