@@ -39,6 +39,11 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Configuration management workflow.
 
+### Building a full site
+
+* Install profile.
+* Devel generate.
+* 
 ## Strategic Anti-Patterns
 
 ### Module explosion.
