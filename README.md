@@ -188,6 +188,13 @@ TODO:
 
 ## Tactical Patterns
 
+### Know your render functions.
+
+* do not use render(), use drupal_render() & drupal_render_children().
+* render(), renders the first element only (always shows() it first).
+* drupal_render(), iterates over every element and renders it.
+* drupal_render_children() only renders the child elements.
+
 ## Tactical Anti-Patterns
 
 ### Not removing 'dead' CSS supplied by contrib modules.
