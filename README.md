@@ -209,6 +209,8 @@ TODO:
 * l()
 * url()
 * theme_list()
+* formate_date()
+
 
 ### Push complexity into modules.
 
