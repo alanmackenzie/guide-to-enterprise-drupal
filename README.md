@@ -246,8 +246,9 @@ TODO:
 
 ### Using strace to debug black boxes.
 
+
+* strace example, remember -s.
 * system call over head.
-* strace example.
 
 ### Using memkeys to debug memcache.
 
