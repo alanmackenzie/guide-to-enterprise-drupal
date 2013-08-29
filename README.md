@@ -35,6 +35,20 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ## Strategic Patterns
 
+### Module weight.
+
+* example.
+* system, contrib, customisation.
+
+```php
+/**
+ * Implements hook_install().
+ */
+function bbcgf_workbench_alters_install() {
+  db_query("UPDATE {system} SET weight = 1 WHERE name = 'bbcgf_workbench_alters'");
+}
+```
+
 ### Write-through caching.
 
 ### Configuration management workflow.
