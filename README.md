@@ -45,7 +45,7 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
  * Implements hook_install().
  */
 function bbcgf_workbench_alters_install() {
-  db_query("UPDATE {system} SET weight = 1 WHERE name = 'bbcgf_workbench_alters'");
+  db_query("UPDATE {system} SET weight = 1 WHERE name = 'project_namespace_module_name'");
 }
 ```
 
