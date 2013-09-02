@@ -481,6 +481,6 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 * Django Beatty
 * Sankatha Bamunuge
 
-### Scrap
+### Scrap/TODO
 
 * $form_state['storage'];
