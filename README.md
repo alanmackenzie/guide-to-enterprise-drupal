@@ -479,7 +479,7 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 # Patterns in Drupal
 
 * [EAV](http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
-* 
+* [ECA](http://en.wikipedia.org/wiki/Event_condition_action)
 
 # Credits
 
