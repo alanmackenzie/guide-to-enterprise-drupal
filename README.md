@@ -476,6 +476,10 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 // @TODO.
 
 ```
+# Patterns in Drupal
+
+* [EAV](http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
+* 
 
 # Credits
 
