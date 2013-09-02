@@ -91,6 +91,12 @@ value() v raw().
 
 ### Memory issues and ```drupal_static_reset()```.
 
+### Use a project namespace.
+
+* Be consistant.
+* fields.
+* modules, module grouping, persistant variable names.
+
 ## Tactical Anti-Patterns
 
 ### Forgetting to filter the output of ```variable_get()```.
