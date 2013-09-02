@@ -64,7 +64,8 @@ function bbcgf_workbench_alters_install() {
 
 ### "Black Boxing"
 
-* UUID example.
+* Review all contrib code.
+* UUID example, adds an extra property to every entity :(.
 
 ## Tactical Patterns.
 
