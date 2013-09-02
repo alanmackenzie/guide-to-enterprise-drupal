@@ -57,7 +57,7 @@ function bbcgf_workbench_alters_install() {
 
 * Install profile.
 * Devel generate.
-* 
+ 
 ## Strategic Anti-Patterns
 
 ### Module explosion.
