@@ -62,6 +62,10 @@ function bbcgf_workbench_alters_install() {
 
 ### Module explosion.
 
+### "Black Boxing"
+
+* UUID example.
+
 ## Tactical Patterns.
 
 ### Project Directory Layout.
