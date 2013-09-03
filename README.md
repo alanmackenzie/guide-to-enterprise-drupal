@@ -87,6 +87,8 @@ value() v raw().
 
 ### Deploying changes via update hooks.
 
+* "Finished performing updates." Is a lie.
+
 ### Writing good drush commands at scale.
 
 ### Memory issues and ```drupal_static_reset()```.
