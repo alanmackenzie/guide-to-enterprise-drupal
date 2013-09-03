@@ -274,6 +274,11 @@ TODO:
 
 * https://github.com/tumblr/memkeys
 
+### Keeping your logs readable.
+
+* https://drupal.org/project/syslog_advanced
+
+
 ## Full Stack Anti-Patterns.
 
 ### Using Memcache as the cache backend for ```cache_form```.
