@@ -53,6 +53,14 @@ function bbcgf_workbench_alters_install() {
 
 ### Configuration management workflow.
 
+* Why? Idempotent, multi environment, local develop builds in sync, human error.
+
+* Deploying changes via update hooks.
+* Maximum number of update hooks per module.
+* "Finished performing updates." Is a lie.
+* Common tasks, enable, disable, uninstalling modules, reverting features.
+* Using db_merge() to update configuration.
+
 ### Building a full site
 
 * Install profile.
@@ -84,10 +92,6 @@ Lazy load.
 value() v raw().
 
 ### Managing and capturing configuration via persistant variables.
-
-### Deploying changes via update hooks.
-
-* "Finished performing updates." Is a lie.
 
 ### Writing good drush commands at scale.
 
