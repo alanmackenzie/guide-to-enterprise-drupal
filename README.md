@@ -304,6 +304,13 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 * Dialogue
 * bring in engineers early.
 
+### Failing to use a message queue.
+
+* Connecting components.
+* Decoupling.
+* Handling burts.
+* Async.
+
 # Example Drupal Configuration
 
 ## Production Configuration.
