@@ -251,9 +251,13 @@ TODO:
 
 ### Breaking Migrations into smaller chunks.
 
-# Drupal in a Full Stack Environment.
+# Full Stack/Drupal DevOps.
 
 ## Full Stack Patterns.
+
+### Clearing individual caches.
+
+* Hook drush_cache_clear.
 
 ### Cron Jobs.
 
@@ -262,7 +266,6 @@ TODO:
 * unix cron keep it simple.
 
 ### Using strace to debug black boxes.
-
 
 * strace example, remember -s.
 * system call over head.
