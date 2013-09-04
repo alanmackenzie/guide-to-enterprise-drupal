@@ -518,3 +518,4 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 ### Scrap/TODO
 
 * $form_state['storage'];
+* Drupal and xdebug.
