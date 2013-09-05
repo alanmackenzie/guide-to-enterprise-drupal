@@ -80,25 +80,58 @@ function bbcgf_workbench_alters_install() {
 ### Project Directory Layout.
 
 ```
-.
-|-- all
-|   |-- drush
-|   |-- libraries
-|   |-- modules
-|   |   |-- contrib
-|   |   |-- custom
-|   |   |-- dev-tools
-|   |   |-- features
-|   |   |-- migration
-|   |   `-- patched
-|   `-- themes
-|       |-- contrib 
-|       `-- custom 
-|-- example.com
-|   |-- files
-|   `-- inc
-`-- default
+docroot
+|-- includes
+|-- modules
+|-- profiles
+|-- scripts
+|-- sites
+|   |-- all
+|   |   |-- drush
+|   |   |-- libraries
+|   |   |-- modules
+|   |   |   |-- contrib
+|   |   |   |-- custom
+|   |   |   |-- dev-tools
+|   |   |   |-- features
+|   |   |   |-- migration
+|   |   |   `-- patched
+|   |   `-- themes
+|   |       |-- contrib
+|   |       |-- custom 
+|   |       `-- patched
+|   |-- example.com
+|   |   |-- files
+|   |   `-- inc
+|   `-- default
+`-- themes
 ```
+
+Application code is placed in a sub-directory (docroot in this example) to allow for files that should remain private such as vagrant builds, documentation, release notes and shell scripts. 
+
+Never touch anything above the sites directory of your Drupal installation without a very good reason. Drupal can take you very far without the need to hack core.
+
+The drush directory allows for command files to be added to the repository in sites/all/drush rather than placed ad-hoc in ```${HOME}``` directories in different environments.
+
+The modules directory is further divided into separate sub-directories, this makes reviewing the health of any given Drupal project much simpler. A healthy project will have few modules in contrib or patched and the majority of the sites complexity in contrib.
+
+Modules in the patched directory should always have any patches applied to them checked into the root of that modules directory.
+
+When moving modules around the directory structure you will need to use the [registry_rebuild](https://drupal.org/project/registry_rebuild) drush command. Drupal does note expect modules to be moved around underneath it.
+ 
+Placing all your development tools into a single directory allows your build system to disable them in a single command and for developers to enable them all in a similar fashion. Doing this will avoid the reasonably common mistake of a developer forgetting to remove a call to ```dpm()``` or ```kpr()``` in his or her code and that code reaching production undetected - because production was the only environment with the devel module disabled.
+
+```
+# disable-development-modules.sh
+
+# @note We don't have to worry about spaces in the module names.
+
+for PATH in $(find docroot/sites/all/modules/dev-tools -maxdepth 1) 
+do 
+  MODULE=$(basename "${PATH}")
+  drush -y pm-disable "${MODULE}"
+done
+
 
 ### Use Entity Field Query (EFQ).
 
