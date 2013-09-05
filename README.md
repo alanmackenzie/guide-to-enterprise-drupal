@@ -94,7 +94,7 @@ function bbcgf_workbench_alters_install() {
 |   `-- themes
 |       |-- contrib 
 |       `-- custom 
-|-- bbcgoodfood.com
+|-- example.com
 |   |-- files
 |   `-- inc
 `-- default
