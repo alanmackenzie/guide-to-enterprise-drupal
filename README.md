@@ -121,17 +121,21 @@ When moving modules around the directory structure you will need to use the [reg
  
 Placing all your development tools into a single directory allows your build system to disable them in a single command and for developers to enable them all in a similar fashion. Doing this will avoid the reasonably common mistake of a developer forgetting to remove a call to ```dpm()``` or ```kpr()``` in his or her code and that code reaching production undetected - because production was the only environment with the devel module disabled.
 
-```
+```bash
 # disable-development-modules.sh
 
 # @note We don't have to worry about spaces in the module names.
+
+# @note Submodules such as views_ui do not need to be moved into the
+# dev-tools directory, you can either use a symlink to the module
+# itself or a text file with the matching file name.
 
 for PATH in $(find docroot/sites/all/modules/dev-tools -maxdepth 1) 
 do 
   MODULE=$(basename "${PATH}")
   drush -y pm-disable "${MODULE}"
 done
-
+```
 
 ### Use Entity Field Query (EFQ).
 
