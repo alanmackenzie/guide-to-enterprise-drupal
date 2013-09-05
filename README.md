@@ -79,6 +79,27 @@ function bbcgf_workbench_alters_install() {
 
 ### Project Directory Layout.
 
+```
+.
+|-- all
+|   |-- drush
+|   |-- libraries
+|   |-- modules
+|   |   |-- contrib
+|   |   |-- custom
+|   |   |-- dev-tools
+|   |   |-- features
+|   |   |-- migration
+|   |   `-- patched
+|   `-- themes
+|       |-- contrib 
+|       `-- custom 
+|-- bbcgoodfood.com
+|   |-- files
+|   `-- inc
+`-- default
+```
+
 ### Use Entity Field Query (EFQ).
 
 ### Use Entity Metadata Wrapper (EMW).
@@ -524,3 +545,4 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 
 * $form_state['storage'];
 * Drupal and xdebug.
+* tree -L 3 -d --charset=ascii 
