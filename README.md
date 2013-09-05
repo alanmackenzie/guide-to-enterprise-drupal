@@ -516,6 +516,8 @@ $conf['field_purge_batch_size'] = 10000;
 $conf['redirect_auto_redirect'] = FALSE;
 $conf['pathauto_update_action'] = FALSE;
 
+// TODO: Devel error_handler settings.
+
 /**
  * Locking API
  * 
