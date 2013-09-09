@@ -260,6 +260,7 @@ TODO:
 
 ### Deleting modules from revision control before uninstalling them.
 
+### Huge cache objects and ```MAX_PACKET_SIZE```
 
 # Front-end Patterns
 
