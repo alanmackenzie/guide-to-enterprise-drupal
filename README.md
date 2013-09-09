@@ -243,6 +243,8 @@ if ($file->status == FILE_STATUS_PERMANENT) {
 
 ### Being language oblivious.
 
+### Forgetting to check your returns.
+
 ### Using ```time()``` instead of ```REQUEST_TIME```.
 
 ### Trusting the block cache.
