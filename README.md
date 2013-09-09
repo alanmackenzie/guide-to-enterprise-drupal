@@ -68,6 +68,8 @@ function bbcgf_workbench_alters_install() {
 
 ### Transactions
 
+* keep it simple, transactions inside transactions.
+
 ## Strategic Anti-Patterns
 
 ### Module explosion.
