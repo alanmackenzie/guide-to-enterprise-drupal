@@ -164,6 +164,7 @@ value() v raw().
 * Be consistant.
 * fields.
 * modules, module grouping, persistant variable names.
+* underscores means private function, "this is likely to change".
 
 ## Tactical Anti-Patterns
 
