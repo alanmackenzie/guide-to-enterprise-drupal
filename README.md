@@ -134,7 +134,7 @@ The modules directory is further divided into separate sub-directories, this mak
 
 Modules in the patched directory should always have any patches applied to them checked into the root of that modules directory.
 
-When moving modules around the directory structure you will need to use the [registry_rebuild](https://drupal.org/project/registry_rebuild) drush command. Drupal does note expect modules to be moved around underneath it.
+When moving modules around the directory structure you will need to use the [registry_rebuild](https://drupal.org/project/registry_rebuild) drush command. Drupal does not expect modules to be moved around underneath it.
  
 Placing all your development tools into a single directory allows your build system to disable them in a single command and for developers to enable them all in a similar fashion. Doing this will avoid the reasonably common mistake of a developer forgetting to remove a call to ```dpm()``` or ```kpr()``` in his or her code and that code reaching production undetected - because production was the only environment with the devel module disabled.
 
