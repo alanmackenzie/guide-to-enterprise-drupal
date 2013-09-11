@@ -69,7 +69,8 @@ function bbcgf_workbench_alters_install() {
 ### Transactions
 
 * keep it simple, transactions inside transactions.
-
+* db_merge()
+ 
 ```bash
 
 for i in $(egrep -c -R 'db_insert|db_delete|db_update' --exclude-dir=*\.install  * | egrep -v "(0|1)$"); 
