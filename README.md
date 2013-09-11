@@ -72,6 +72,9 @@ function bbcgf_workbench_alters_install() {
 * db_merge()
  
 ```bash
+# audit-drupal-transactions.sh
+
+# @note This can throw false positives.
 
 for i in $(egrep -c -R 'db_insert|db_delete|db_update' --exclude-dir=*\.install  * | egrep -v "(0|1)$"); 
 do 
