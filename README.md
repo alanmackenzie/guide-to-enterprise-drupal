@@ -618,3 +618,4 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 * $form_state['storage'];
 * Drupal and xdebug.
 * tree -L 3 -d --charset=ascii 
+* egrep 'node/[0-9]+|user/[0-9]+|comment/[0-9]+|taxonomy/term/[0-9]+'
