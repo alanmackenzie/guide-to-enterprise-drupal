@@ -594,10 +594,13 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 * [Presentation Abstraction Control (PAC)/Hierarchical MVC](http://en.wikipedia.org/wiki/Presentation-abstraction-control)
 * [Entity Attribute Value (EVA)](http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
 * [Event Condition Action (ECA)](http://en.wikipedia.org/wiki/Event_condition_action)
-* [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection)
-* [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
 * [Post/Redirect/Get (PRG](http://en.wikipedia.org/wiki/Post/Redirect/Get)
 * [Front Controller](http://en.wikipedia.org/wiki/Front_controller)
+
+* [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection)
+* [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
+* [Observer](http://en.wikipedia.org/wiki/Observer_pattern)
+
 
 # Credits
 
