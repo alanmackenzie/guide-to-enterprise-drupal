@@ -596,6 +596,8 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 * [Event Condition Action (ECA)](http://en.wikipedia.org/wiki/Event_condition_action)
 * [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection)
 * [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
+* [Post/Redirect/Get (PRG](http://en.wikipedia.org/wiki/Post/Redirect/Get)
+* [Front Controller](http://en.wikipedia.org/wiki/Front_controller)
 
 # Credits
 
