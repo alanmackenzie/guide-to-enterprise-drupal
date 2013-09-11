@@ -347,6 +347,12 @@ TODO:
 
 ## Full Stack Anti-Patterns.
 
+### Abusing query parameters.
+
+* Page caching
+* Back-end stampede
+* Do redirects in .htaccess to avoid bootstrapping Drupal
+
 ### Using Memcache as the cache backend for ```cache_form```.
 
 Drupal's Form API uses a token unique to each user per form to prevent [CSRF](http://en.wikipedia.org/wiki/CSRF).
