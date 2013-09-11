@@ -595,6 +595,7 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 * [Entity Attribute Value (EVA)](http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
 * [Event Condition Action (ECA)](http://en.wikipedia.org/wiki/Event_condition_action)
 * [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection)
+* [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
 
 # Credits
 
