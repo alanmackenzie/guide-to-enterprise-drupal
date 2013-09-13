@@ -83,7 +83,12 @@ do
 done
 ```
 
+### Multisite v Domain
+
+
 ## Strategic Anti-Patterns
+
+### Failing to plan for UTF-8/Translation.
 
 ### Module explosion.
 
@@ -327,6 +332,10 @@ TODO:
 
 
 ### Push complexity into modules.
+
+## Tactical Anti-patterns.
+
+### Failing to use ```t()``` in your js.
 
 # Migration Patterns
 
