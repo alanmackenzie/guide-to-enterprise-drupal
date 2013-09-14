@@ -589,6 +589,14 @@ define('ACQUIA_DEVELOPMENT_NOSSL', TRUE);
  */
 $conf['stage_file_proxy_origin'] = 'http://www.example.com';
 $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
+
+/**
+ * Devel settings.
+ * 
+ * @note Drupal's default error handler will silence xdebug.
+ */
+$conf['devel_error_handlers'] = array(0 => 0);
+
 ```
 
 ## ```drushrc.php``` Configuration.
@@ -625,7 +633,6 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 ### Scrap/TODO
 
 * $form_state['storage'];
-* Drupal and xdebug.
 * tree -L 3 -d --charset=ascii 
 * egrep 'node/[0-9]+|user/[0-9]+|comment/[0-9]+|taxonomy/term/[0-9]+'
 * Migration patterns, forceutf8, breaking migrations into chunks.
