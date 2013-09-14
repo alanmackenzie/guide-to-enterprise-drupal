@@ -184,6 +184,8 @@ value() v raw().
 * modules, module grouping, persistant variable names.
 * underscores means private function, "this is likely to change".
 
+### Using ```hook_views_form_substitutions()``` to cache partially dynamic rendered output.
+
 ## Tactical Anti-Patterns
 
 ### Forgetting to filter the output of ```variable_get()```.
@@ -336,12 +338,6 @@ TODO:
 ## Tactical Anti-patterns.
 
 ### Failing to use ```t()``` in your js.
-
-# Migration Patterns
-
-## Strategic Patterns
-
-### Breaking Migrations into smaller chunks.
 
 # Full Stack/Drupal DevOps.
 
@@ -632,3 +628,4 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 * Drupal and xdebug.
 * tree -L 3 -d --charset=ascii 
 * egrep 'node/[0-9]+|user/[0-9]+|comment/[0-9]+|taxonomy/term/[0-9]+'
+* Migration patterns.
