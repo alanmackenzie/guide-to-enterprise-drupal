@@ -580,7 +580,7 @@ $conf['views_ui_show_performance_statistics'] = TRUE;
 $conf['proxy_server'] = 'www-proxy.example.com';
 $conf['proxy_port'] = '80';
 
-// drupal_http_request() does not support HTTPS.
+// drupal_http_request() does not support proxying HTTPS.
 define('ACQUIA_DEVELOPMENT_NOSSL', TRUE);
 
 /**
