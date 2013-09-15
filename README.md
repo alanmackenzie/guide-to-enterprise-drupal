@@ -183,7 +183,14 @@ done
 
 ### Use Entity Field Query (EFQ).
 
+* ORM on steriods, very powerful abstraction.
+* Future proof?
+
 ### Use Entity Metadata Wrapper (EMW).
+
+* Reduce bugs, tedious entity loading, language code.
+* Concise, much easiser to read.
+* Future proof?
 
 ### Views, total_rows, pagination and count().
 
