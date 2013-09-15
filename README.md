@@ -95,15 +95,20 @@ Good programmers read the documentation, great programmers read the code.
 * Reflection API.
 
 ```php
+// Views has a fairly involved architecture, it may be quicker just to look
+// for a method that is suitably named for the task we're trying to achieve.
+// @see http://php.net/manual/en/book.reflection.php
+
 $views = views_get_all_views();
 
 foreach (views_get_all_views() as $view) {
   foreach ($view->display as $display) {
+  
     $class = new ReflectionClass(get_class($display));
-    dpm($class->getMethods(), 'methods');
-    break;
-  }
-  break;
+    dpm($class->getMethods(), get_class($display));
+    
+    // Do something.
+  };
 }
 
 ```
