@@ -86,6 +86,28 @@ done
 ### Multisite v Domain
 
 
+### Reverse engineering
+
+Good programmers read the documentation, great programmers read the code.
+
+* Nearly everything has been done before. 
+* Examine the database.
+* Reflection API.
+
+```php
+$views = views_get_all_views();
+
+foreach (views_get_all_views() as $view) {
+  foreach ($view->display as $display) {
+    $class = new ReflectionClass(get_class($display));
+    dpm($class->getMethods(), 'methods');
+    break;
+  }
+  break;
+}
+
+```
+
 ## Strategic Anti-Patterns
 
 ### Failing to plan for UTF-8/Translation.
