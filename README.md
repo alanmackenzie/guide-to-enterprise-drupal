@@ -207,6 +207,11 @@ value() v raw().
 
 ### Managing and capturing configuration via persistant variables.
 
+* Simplest way is via $conf[].
+* Find active persitant variables with drush, not inactive ones though (shell script).
+* Can put comments next to code.
+* Strongarm is too complex.
+
 ### Writing good drush commands at scale.
 
 ### Memory issues and ```drupal_static_reset()```.
