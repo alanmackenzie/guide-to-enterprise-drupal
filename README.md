@@ -414,6 +414,7 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 * Increasing memory size decreases the number of workers available.
 * blah blah concurrency.
 * https://drupal.org/project/role_memory_limit
+* Prefork doesn't free memory: [MaxRequestPerChild](http://httpd.apache.org/docs/2.2/mod/mpm_common.html#maxrequestsperchild)
 
 ### Not designing with page caching in mind.
 
