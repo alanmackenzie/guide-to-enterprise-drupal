@@ -612,11 +612,19 @@ $conf['devel_error_handlers'] = array(0 => 0);
 ```
 # Patterns in Drupal
 
+## General
+
 * [Presentation Abstraction Control (PAC)/Hierarchical MVC](http://en.wikipedia.org/wiki/Presentation-abstraction-control)
 * [Entity Attribute Value (EVA)](http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
 * [Event Condition Action (ECA)](http://en.wikipedia.org/wiki/Event_condition_action)
 * [Post/Redirect/Get (PRG)](http://en.wikipedia.org/wiki/Post/Redirect/Get)
 * [Front Controller](http://en.wikipedia.org/wiki/Front_controller)
+
+## Plugins
+
+* [Strategy Pattern](http://en.wikipedia.org/wiki/Strategy_pattern)
+
+## Hooks
 
 * [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection)
 * [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
