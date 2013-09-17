@@ -751,10 +751,10 @@ $conf['devel_error_handlers'] = array(0 => 0);
 ## Plugins
 
 * [Strategy Pattern](http://en.wikipedia.org/wiki/Strategy_pattern)
-
+* [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection)
+* 
 ## Hooks
 
-* [Dependency Injection (DI)](http://en.wikipedia.org/wiki/Dependency_injection)
 * [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
 * [Observer](http://en.wikipedia.org/wiki/Observer_pattern)
 
