@@ -31,6 +31,14 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 * Revision control.
 * Tools.
 
+### Teach everybody Drupal
+
+Teach the non technical parts of you team the basics of Drupal. If they have an understanding of what a content type, node, taxononmy term or view is they can begin to follow (to some degree) technical discussions they may be part of.
+
+Get the same people using the Drupal admin UI as much as possible. Extend it where possible instead of replacing it with a tamed down admin panel.
+
+The Admin views module is an good starting point.
+
 # Back-end Patterns
 
 ## Strategic Patterns
