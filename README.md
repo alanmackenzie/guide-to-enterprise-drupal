@@ -382,6 +382,24 @@ TODO:
 
 ## Full Stack Patterns.
 
+
+### Continuous Deployment
+
+* Update hooks should clear exact caches.
+* hard v soft deployments. Naming convention for OPs, stakeholders and build system.
+* https://drupal.org/project/registry_rebuild
+* gentle cache clear/gentle RR?
+
+```sh
+#!/bin/sh
+
+if [ $(echo "$deployedtag" | egrep '\-hard$')  ]
+then
+  echo 'Hard deploy, running registry rebuild.'
+  drush @$drush_alias rr
+fi
+```
+
 ### Clearing individual caches.
 
 * Hook drush_cache_clear.
