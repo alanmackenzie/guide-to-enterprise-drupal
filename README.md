@@ -350,7 +350,7 @@ The same goes for stripping out the extra classes and ids added by Drupal, remov
 
 ### JavaScript.
 
-All your JavaScript should be wrapper in an outer context:
+All your JavaScript should be wrapped in an outer context:
 ```js
 (function ($) {
   // All your code here
@@ -373,6 +373,35 @@ Use context.find('.el') over $('el') where possbile.
 
 ### Theme structure
 
+Break up you template.php file to keep it managable in larger builds:
+```php
+$path = drupal_get_path('theme', 'bbcw_goodfood');
+include_once $path . '/inc/preprocess.inc';
+include_once $path . '/inc/theme.inc';
+include_once $path . '/inc/menu.inc';
+include_once $path . '/inc/form.inc';
+```
+
+Structure you templates folder to make it managable.
+```
+templates
+|-- blocks
+|-- comments
+|-- fields
+|-- forms
+|-- html
+|-- modules
+|-- nodes
+|-- pages
+|-- panels
+|-- regions
+|-- user
+|-- views
+```
+You make take this further and add sub folders where there are many templates, for example per view folders under views.
+
+When creating custom modules specific to your site you should treat these as if they will be made open source, this means keeping the modules template files in module directory, as with any other contrib module. If your template is closely tied to your specfic theme it is still good practice to provide a generic template with your module.
+
 ### CSS testing.
 
 * [https://drupal.org/project/styleguide](Styleguide module)
@@ -382,7 +411,7 @@ Use context.find('.el') over $('el') where possbile.
 
 ### JavaScript.
 
-Do not uese
+Do not be tempted to rearrange the DOM via JS for responsive layouts. It causes page flicker as the JS loads, especially on mobile devices.
 
 ## Tactical Patterns
 
