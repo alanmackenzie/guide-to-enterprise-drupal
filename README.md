@@ -70,16 +70,16 @@ function bbcgf_workbench_alters_install() {
 
 * keep it simple, transactions inside transactions.
 * db_merge()
- 
+
 ```bash
 # audit-drupal-transactions.sh
 
 # @note This can throw false positives.
 
-for i in $(egrep -c -R 'db_insert|db_delete|db_update' --exclude-dir=*\.install  * | egrep -v "(0|1)$"); 
-do 
-  echo ${i%%:*} 
-  egrep -C 7 'db_insert|db_delete|db_update' ${i%%:*} 
+for i in $(egrep -c -R 'db_insert|db_delete|db_update' --exclude-dir=*\.install  * | egrep -v "(0|1)$");
+do
+  echo ${i%%:*}
+  egrep -C 7 'db_insert|db_delete|db_update' ${i%%:*}
 done
 ```
 
@@ -90,7 +90,7 @@ done
 
 Good programmers read the documentation, great programmers read the code.
 
-* Nearly everything has been done before. 
+* Nearly everything has been done before.
 * Examine the database.
 * Reflection API.
 
@@ -103,10 +103,10 @@ $views = views_get_all_views();
 
 foreach (views_get_all_views() as $view) {
   foreach ($view->display as $display) {
-  
+
     $class = new ReflectionClass(get_class($display));
     dpm($class->getMethods(), get_class($display));
-    
+
     // Do something.
   };
 }
@@ -147,7 +147,7 @@ docroot
 |   |   |   `-- patched
 |   |   `-- themes
 |   |       |-- contrib
-|   |       |-- custom 
+|   |       |-- custom
 |   |       `-- patched
 |   |-- example.com
 |   |   |-- files
@@ -156,7 +156,7 @@ docroot
 `-- themes
 ```
 
-Application code is placed in a sub-directory (docroot in this example) to allow for files that should remain private such as vagrant builds, documentation, release notes and shell scripts. 
+Application code is placed in a sub-directory (docroot in this example) to allow for files that should remain private such as vagrant builds, documentation, release notes and shell scripts.
 
 Never touch anything above the sites directory of your Drupal installation without a very good reason. Drupal can take you very far without the need to hack core.
 
@@ -167,7 +167,7 @@ The modules directory is further divided into separate sub-directories, this mak
 Modules in the patched directory should always have any patches applied to them checked into the root of that modules directory.
 
 When moving modules around the directory structure you will need to use the [registry_rebuild](https://drupal.org/project/registry_rebuild) drush command. Drupal does not expect modules to be moved around underneath it.
- 
+
 Placing all your development tools into a single directory allows your build system to disable them in a single command and for developers to enable them all in a similar fashion. Doing this will avoid the reasonably common mistake of a developer forgetting to remove a call to ```dpm()``` or ```kpr()``` in his or her code and that code reaching production undetected - because production was the only environment with the devel module disabled.
 
 ```bash
@@ -179,8 +179,8 @@ Placing all your development tools into a single directory allows your build sys
 # dev-tools directory, you can either use a symlink to the module
 # itself or a text file with the matching file name.
 
-for PATH in $(find docroot/sites/all/modules/dev-tools -maxdepth 1) 
-do 
+for PATH in $(find docroot/sites/all/modules/dev-tools -maxdepth 1)
+do
   MODULE=$(basename "${PATH}")
   drush -y pm-disable "${MODULE}"
 done
@@ -340,7 +340,36 @@ TODO:
 * Documenting css
 * Drupal centric css structure.
 
-# AJAX.
+### Use Drupal markup.
+
+Make use of the default markup provided by Drupal where possible. It provides a standardised setup that allows for rapid development and avoids the need for large numbers of template files / theme overrides.
+
+This does not mean you cannot cut down the often bloated Drupal markup, fewer nodes in the DOM is of course a good thing, especially when in comes to JavaScript. Instead be intelligent about it, just because you don't need an extra wrapper at this point does not mean it will not be useful for styling, or hooking into with JavaScript, in the future.
+
+The same goes for stripping out the extra classes and ids added by Drupal, remove them for a reason rather then for the sake of it. Additionally, Contrib modules sometimes make assumptions about the markup available.
+
+### JavaScript.
+
+All your JavaScript should be wrapper in an outer context:
+```js
+(function ($) {
+  // All your code here
+})(jQuery);
+```
+
+Do not use jQuery(document).ready(), instead use Drupal Behaviours. These behaviours will allow your JavaScript to act on any new element added to the page.
+
+In the case that you only want your JavaScript to run the first time make use of .once(). Be sure to namespace the class you are adding.
+
+Use Drupal.t() on the strings in your JavaScript, as you would with PHP, so that they are translatable.
+
+#### Performance
+
+Make your jQuery selectors as specific as possible.
+
+Use context.find('.el') over $('el') where possbile.
+
+
 
 ### Theme structure
 
@@ -350,6 +379,10 @@ TODO:
 * Hardy.
 
 ## Strategic Anti-Patterns
+
+### JavaScript.
+
+Do not uese
 
 ## Tactical Patterns
 
@@ -529,7 +562,7 @@ $conf['user_password_reset_timeout'] = 259200;
 
 /**
  * Flood prevention.
- * 
+ *
  * @note You may wish to relax these during the launch period of any new
  * site and gradually tighten them up as you understand your user base more.
  *
@@ -614,7 +647,7 @@ $conf['pathauto_update_action'] = FALSE;
 
 /**
  * Locking API
- * 
+ *
  * TODO: Rationale.
  */
 $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
@@ -654,7 +687,7 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
 
 /**
  * Devel settings.
- * 
+ *
  * @note Drupal's default error handler will silence xdebug.
  */
 $conf['devel_error_handlers'] = array(0 => 0);
@@ -703,6 +736,6 @@ $conf['devel_error_handlers'] = array(0 => 0);
 ### Scrap/TODO
 
 * $form_state['storage'];
-* tree -L 3 -d --charset=ascii 
+* tree -L 3 -d --charset=ascii
 * egrep 'node/[0-9]+|user/[0-9]+|comment/[0-9]+|taxonomy/term/[0-9]+'
 * Migration patterns, forceutf8, breaking migrations into chunks.
