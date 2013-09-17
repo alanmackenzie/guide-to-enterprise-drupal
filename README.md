@@ -380,7 +380,7 @@ Make your jQuery selectors as specific as possible.
 
 Use context.find('.el') over $('el') where possbile.
 
-
+* Firing events all the time on window resize etc.
 
 ### Theme structure
 
