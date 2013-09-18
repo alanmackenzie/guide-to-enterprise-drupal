@@ -241,7 +241,10 @@ value() v raw().
 ### Writing good drush commands at scale.
 
 * Q API.
-* 
+* interactive.
+* log.ning correct results.
+* returning correct results.
+
 ### Memory issues and ```drupal_static_reset()```.
 
 ### Use a project namespace.
