@@ -224,6 +224,7 @@ done
 
 ### Views, total_rows, pagination and count().
 
+* views_get_view_results().
 TODO:
 
 Mention [method chaining](http://en.wikipedia.org/wiki/Method_chaining)
