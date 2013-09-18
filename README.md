@@ -253,6 +253,9 @@ value() v raw().
 * fields.
 * modules, module grouping, persistant variable names.
 * underscores means private function, "this is likely to change".
+* short name
+* no underscores in namespace
+* use separate theme namespace.
 
 ### Using ```hook_views_form_substitutions()``` to cache partially dynamic rendered output.
 
