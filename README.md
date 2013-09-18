@@ -781,3 +781,4 @@ $conf['devel_error_handlers'] = array(0 => 0);
 * tree -L 3 -d --charset=ascii
 * egrep 'node/[0-9]+|user/[0-9]+|comment/[0-9]+|taxonomy/term/[0-9]+'
 * Migration patterns, forceutf8, breaking migrations into chunks.
+* Traditional domain modelling anti-pattern, dont tighly couple code to content.
