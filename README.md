@@ -359,6 +359,8 @@ TODO:
 
 * Hitting memcache when you dont need to.
 * node_save() clearing the block cache.
+* block in code no need for cache, block in db still needs cache.
+* Use block cache instead of views cache.
 
 ### Deleting modules from revision control before uninstalling them.
 
