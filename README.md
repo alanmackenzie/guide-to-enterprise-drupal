@@ -458,6 +458,8 @@ Do not be tempted to rearrange the DOM via JS for responsive layouts. It causes 
 
 ### Continuous Deployment
 
+* Feature toggle pattern, http://en.wikipedia.org/wiki/Feature_toggle
+* Complexity rises in a non-linear fashion, releasing early and often releases this 'pressure valve'.
 * Update hooks should clear exact caches.
 * hard v soft deployments. Naming convention for OPs, stakeholders and build system.
 * https://drupal.org/project/registry_rebuild
