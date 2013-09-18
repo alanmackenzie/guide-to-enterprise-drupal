@@ -139,6 +139,10 @@ foreach (views_get_all_views() as $view) {
 
 ### Module explosion.
 
+* Embrace composable modules when the pay off is worth it.
+* If using prescriptive modules pick one of the options.
+* Some times its easier just to implement something directly.
+
 ### "Black Boxing"
 
 * Review all contrib code.
