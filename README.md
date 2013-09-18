@@ -57,7 +57,7 @@ The Admin views module is an good starting point.
  * Implements hook_install().
  */
 function bbcgf_workbench_alters_install() {
-  db_query("UPDATE {system} SET weight = 1 WHERE name = 'project_namespace_module_name'");
+  db_query("UPDATE {system} SET weight = 1 WHERE name = 'namespace_module_name'");
 }
 ```
 
@@ -254,7 +254,7 @@ value() v raw().
 * modules, module grouping, persistant variable names.
 * underscores means private function, "this is likely to change".
 * short name
-* no underscores in namespace
+* no underscores in namespace, this keeps a clear separation between hooks and namespace.
 * use separate theme namespace.
 
 ### Using ```hook_views_form_substitutions()``` to cache partially dynamic rendered output.
