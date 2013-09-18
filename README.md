@@ -61,7 +61,9 @@ function bbcgf_workbench_alters_install() {
 }
 ```
 
-### Write-through caching.
+### Write-back caching.
+
+* responsible.
 
 ### Configuration management workflow.
 
