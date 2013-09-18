@@ -77,13 +77,13 @@ function bbcgf_workbench_alters_install() {
 
 ### Building a full site
 
-
 * Devel generate.
+* use migrated/real data where possible.
 
 ### Transactions
 
 * keep it simple, transactions inside transactions.
-* db_merge()
+* db_merge(), for rows with low contention it is great.
 
 ```bash
 # audit-drupal-transactions.sh
@@ -97,8 +97,11 @@ do
 done
 ```
 
-### Multisite v Domain
+### Multisite v Domain / Content wheel / distibuted site
 
+* Avoid where possible if it cant be handled in code.
+* d2d migrate.
+* services/feeds.
 
 ### Reverse engineering
 
