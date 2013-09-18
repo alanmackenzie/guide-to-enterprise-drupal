@@ -146,6 +146,7 @@ foreach (views_get_all_views() as $view) {
 ### "Black Boxing"
 
 * Review all contrib code.
+* Lack of coding standards huge red warning.
 * UUID example, adds an extra property to every entity :(.
 
 ## Tactical Patterns.
