@@ -109,6 +109,9 @@ Good programmers read the documentation, great programmers read the code.
 
 * Nearly everything has been done before.
 * Examine the database.
+* Devel query log.
+* Inspecting alter hooks.
+* APM.
 * Reflection API.
 
 ```php
