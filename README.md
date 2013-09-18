@@ -30,6 +30,7 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 * Documentation needs to be living and breathing.
 * Revision control.
 * Tools.
+* self documenting.
 
 ### Teach everybody Drupal
 
