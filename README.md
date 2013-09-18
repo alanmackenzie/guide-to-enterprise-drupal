@@ -290,9 +290,15 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Using ```static $cache``` instead of ```drupal_static()```.
 
+* Use Q API and process in batches.
+
 ### ```views_get_view()``` and static caching.
 
+* Pass correct parameters.
+
 ### Destroying data in the ```global $user``` object.
+
+* Use $account.
 
 ### Hardcoding values.
 
