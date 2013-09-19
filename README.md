@@ -7,7 +7,15 @@ External contribution is welcome and encouraged.
 
 # Project Patterns
 
-### Drupal as a packaged product.
+### Drupal is already productized
+
+* Drupal gives you a lot for free, use it.
+* Delivering things ASAP lets you check your assertions with real world data. You can always improve them later on.
+* Engineers need to think very carefully before embarking on large pieces of customisation to Drupal. Often this is a failure to corretly [manage complexity](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html).
+
+It is worth thinking very carefully
+
+* Ask Graham for catchy phrase around building new v alterting.
 
 ### Guerrilla Platforms
 
@@ -22,7 +30,7 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 ### Drupal People.
 
-### Managing Complexity.
+The Drupal community
 
 ### Developer workflow.
 
