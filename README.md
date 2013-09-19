@@ -573,6 +573,8 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 * blah blah concurrency.
 * https://drupal.org/project/role_memory_limit
 * Prefork doesn't free memory: [MaxRequestPerChild](http://httpd.apache.org/docs/2.2/mod/mpm_common.html#maxrequestsperchild)
+* cgi req and time limit.
+* safest thing to do is have a seperate editorial webserver or cluster.
 
 ### Not designing with page caching in mind.
 
