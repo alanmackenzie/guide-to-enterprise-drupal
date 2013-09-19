@@ -9,7 +9,12 @@ External contribution is welcome and encouraged.
 
 ### Drupal as a packaged product.
 
-### Go "All In".
+### Guerrilla Platforms
+
+* Tightly coupled code and content is a bad idea.
+* Distributed, common thread.
+* reusable
+* step down graph.
 
 ### Migrating to Drupal.
 
