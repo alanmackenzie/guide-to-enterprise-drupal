@@ -13,8 +13,6 @@ External contribution is welcome and encouraged.
 * Delivering things ASAP lets you check your assertions with real world data. You can always improve them later on.
 * Engineers need to think very carefully before embarking on large pieces of customisation to Drupal. Often this is a failure to corretly [manage complexity](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html).
 
-It is worth thinking very carefully
-
 * Ask Graham for catchy phrase around building new v alterting.
 
 ### Guerrilla Platforms
