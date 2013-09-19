@@ -740,7 +740,11 @@ $conf['pathauto_update_action'] = FALSE;
 /**
  * Locking API
  *
- * TODO: Rationale.
+ * @TODO - Rewrite
+ *   * memcache does not suffer from contention issues, quicker than database
+ *   * minimising locking time is a very good thing
+ *   * 'do not use mysql as a key value store'
+ *   * be careful with LRU and deadlock
  */
 $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
 
