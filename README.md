@@ -319,6 +319,9 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Abusing ```drupal_goto()```.
 
+* Do not call outside of a menu callback.
+* Form submit handler issues. Use $form['redirect'].
+
 ### Using ```exit()``` instead of ```drupal_exit()```.
 
 ### Using ```static $cache``` instead of ```drupal_static()```.
