@@ -292,6 +292,10 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 * Use Q API and process in batches.
 
+### Adding too many displays to a view.
+
+* When loading a view all displays are loaded.
+
 ### ```views_get_view()``` and static caching.
 
 * Pass correct parameters.
