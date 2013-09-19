@@ -817,8 +817,44 @@ $conf['devel_error_handlers'] = array(0 => 0);
 
 ```php
 
-// @TODO.
+/**
+ * List of tables whose *data* is skipped by the 'sql-dump' and 'sql-sync'
+ * commands when the "--structure-tables-key=common" option is provided.
+ * You may add specific tables to the existing array or add a new element.
+ */
+$options['structure-tables']['common'] = array(
+  'history',
+  'sessions',
+  'flag_content',
+  'watchdog',
+  'blocked_ips',
+  'flood',
+  'migrate_log',
+  'cache',
+  'cache_block',
+  'cache_bootstrap',
+  'cache_entity_comment',
+  'cache_entity_file',
+  'cache_entity_node',
+  'cache_entity_taxonomy_term',
+  'cache_entity_taxonomy_vocabulary',
+  'cache_entity_user',
+  'cache_field',
+  'cache_filter',
+  'cache_form',
+  'cache_image',
+  'cache_menu',
+  'cache_metatag',
+  'cache_page',
+  'cache_path',
+  'cache_token',
+  'cache_update',
+  'cache_views',
+  'cache_views_data',
+);
 
+
+// @TODO Setting default flags.
 ```
 # Patterns in Drupal
 
