@@ -603,6 +603,7 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 
 * Dialogue
 * bring in engineers early.
+* Examples of drupal_message() getting caught in the cache.
 
 ### Failing to use a message queue.
 
