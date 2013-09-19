@@ -275,7 +275,10 @@ else {
 * log.ning correct results.
 * returning correct results.
 
-### Memory issues and ```drupal_static_reset()```.
+### Static caching, memory issues and ```drupal_static_reset()```.
+
+* Running ```drupal_static_reset()``` inline with a request because your code has synchronisation issues is usually a code smell.
+* This function is required if doing any kind of large processing in drush a drush command such as generating thousands of nodes for a load test.
 
 ### Use a project namespace.
 
