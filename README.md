@@ -119,7 +119,9 @@ done
 
 ### Reverse engineering
 
-Good programmers read the documentation, great programmers read the code.
+>> Good programmers read the documentation, great programmers read the code.
+
+Lazy programmers use reverse engineering.
 
 * Nearly everything has been done before.
 * Examine the database.
