@@ -28,7 +28,7 @@ Drupal has an excellent [migration framework](https://drupal.org/project/migrate
 
 * Writing good commit messages.
 * Correct use of revision control.
-* Feature branching.
+* Git flow, control over when certain features go live, ability to hot fix/cherry pick.
 
 ### Inline documentation.
 
