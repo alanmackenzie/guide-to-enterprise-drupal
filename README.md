@@ -813,3 +813,4 @@ $conf['devel_error_handlers'] = array(0 => 0);
 * egrep 'node/[0-9]+|user/[0-9]+|comment/[0-9]+|taxonomy/term/[0-9]+'
 * Migration patterns, forceutf8, breaking migrations into chunks.
 * Traditional domain modelling anti-pattern, dont tighly couple code to content.
+* block_list, get_block_by_regen.
