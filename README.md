@@ -74,6 +74,7 @@ function bbcgf_workbench_alters_install() {
 
 ### Write-back caching.
 
+* With exception of the SchemaCache all caches in core use write-back.
 * responsible.
 
 ### Configuration management workflow.
