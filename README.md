@@ -237,6 +237,22 @@ value() v raw().
 * Find active persitant variables with drush, not inactive ones though (shell script).
 * Can put comments next to code.
 * Strongarm is too complex.
+* $conf allows for per environment or special conditions.
+
+```php
+// Hide all error messages on the production environment.
+if ($_ENV["AH_SITE_ENVIRONMENT"] == "prod") {
+  $conf['error_level'] = 0;
+}
+
+// Cache the homepage for 3 hours and every other page for 24 hours.
+if ($_SERVER['REQUEST_URI'] === '/') {
+  $conf['page_cache_maximum_age'] = 10800;
+}
+else {
+  $conf['page_cache_maximum_age'] = 86400;
+}
+```
 
 ### Writing good drush commands at scale.
 
