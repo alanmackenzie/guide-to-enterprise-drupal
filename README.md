@@ -241,11 +241,9 @@ done
 ### Views, total_rows, pagination and count().
 
 * views_get_view_results().
-TODO:
-
-Mention [method chaining](http://en.wikipedia.org/wiki/Method_chaining)
-Lazy load.
-value() v raw().
+* Never run ```count()``` on the results set.
+* Any query with a pager also has the count query run by default. If you are having performance issues with the count query part of the pager think about using TODO.
+* Use ```hook_view_pre_execute()``` and set the count flag.
 
 ### Managing and capturing configuration via persistant variables.
 
