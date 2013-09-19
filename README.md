@@ -547,9 +547,17 @@ fi
 * Back-end stampede
 * Do redirects in .htaccess to avoid bootstrapping Drupal
 
-### Using Memcache as the cache backend for ```cache_form```.
+### Form token myths.
 
 Drupal's Form API uses a token unique to each user per form to prevent [CSRF](http://en.wikipedia.org/wiki/CSRF).
+
+UID 0 is ignored.
+
+Public and private key.
+
+### Using Memcache as the cache backend for ```cache_form``` or ```sessions```.
+
+* Rewrite to apply to sessions as well.
 
 The downside to this is that ```cache_form```, the place where the CSRF busting token is stored, should always use persistant storage. Memcache uses a [LRU](http://en.wikipedia.org/wiki/Cache_algorithms#Least_Recently_Used) algorithm to evict unpopular cache objects, making it incompatible with ```cache_form```.
 
