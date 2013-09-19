@@ -381,6 +381,8 @@ TODO:
 * node_save() clearing the block cache.
 * block in code no need for cache, block in db still needs cache.
 * Use block cache instead of views cache.
+* Block cache scales better than views cache as it only requires one fetch from the cache bin.
+* Views cache underneath the block cache is the ideal scenario.
 
 ### Deleting modules from revision control before uninstalling them.
 
@@ -853,3 +855,6 @@ $conf['devel_error_handlers'] = array(0 => 0);
 * Migration patterns, forceutf8, breaking migrations into chunks.
 * Traditional domain modelling anti-pattern, dont tighly couple code to content.
 * block_list, get_block_by_regen.
+* overridable local developer configuration, not checked in.
+* attach js to render_array or do in hook init
+* Add Acquia staff to the credits.
