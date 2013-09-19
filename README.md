@@ -324,6 +324,8 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Using ```exit()``` instead of ```drupal_exit()```.
 
+```exit()``` does not fire hook_exit. You must use ```drupal_exit()``` instead.
+
 ### Using ```static $cache``` instead of ```drupal_static()```.
 
 * Use Q API and process in batches.
