@@ -529,6 +529,11 @@ fi
 
 * https://drupal.org/project/syslog_advanced
 
+### Caching with varnish and akamai
+
+* Short TTL on akamai, X-Edge-Control.
+* Longer TTL in varnish.
+* Pages can be purge from varnish much easier than akama due to the delay.
 
 ## Full Stack Anti-Patterns.
 
