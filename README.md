@@ -5,6 +5,8 @@ Patterns and Anti-Patterns for Enterprise Drupal Development.
 
 External contribution is welcome and encouraged.
 
+Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/alanmackenzie/intro-to-software-eng).
+
 # Project Patterns
 
 ### Drupal is already productized
