@@ -391,7 +391,12 @@ if ($file->status == FILE_STATUS_PERMANENT) {
 
 ### Being language oblivious.
 
-### Forgetting to check your returns.
+* 'und' or LANGUAGE_NONE is usually a code smell.
+
+### Check your returns / Use the menu system.
+
+* node_load() can return ```FALSE```.
+* If node is guarnteed to exist use ```menu_get_object``` instead.
 
 ### Using ```time()``` instead of ```REQUEST_TIME```.
 
