@@ -546,6 +546,7 @@ Do not be tempted to rearrange the DOM via JS for responsive layouts. It causes 
 * hard v soft deployments. Naming convention for OPs, stakeholders and build system.
 * https://drupal.org/project/registry_rebuild
 * gentle cache clear/gentle RR?
+* TODO: Service outage notice.
 
 ```sh
 #!/bin/sh
