@@ -17,7 +17,7 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 
 * Ask Graham for catchy phrase around building new v alterting.
 
-### Guerrilla Platforms
+### Gorilla Platforms v Guerrilla Platforms
 
 * Tightly coupled code and content is a bad idea.
 * Distributed, common thread.
