@@ -533,10 +533,29 @@ Do not be tempted to rearrange the DOM via JS for responsive layouts. It causes 
 
 ### Failing to use ```t()``` in your js.
 
+# Testing
+
+## Testing Patterns
+
+### Tagging all test users with a ```tester``` role.
+
+* Testing with the admin account is an anti-pattern.
+* Need the ability to delete all content and comments associated with test users on cronjob/button push.
+* Much better if test accounts are available to the entire team across all environments. Ad-hoc style of individuals creating them is likely to lead to more bugs.
+* TODO: Write a module for the above.
+
+
+### Using PHPUnit
+
+* D8 ready. Better than simpletest.
+* Hard/PhantomJs
+
+### Continuous Testing v Monitoring
+* drupal lint.
+
 # Full Stack/Drupal DevOps.
 
 ## Full Stack Patterns.
-
 
 ### Continuous Deployment
 
