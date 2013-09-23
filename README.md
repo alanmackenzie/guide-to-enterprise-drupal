@@ -99,7 +99,7 @@ function bbcgf_workbench_alters_install() {
 // sections in a feature module.
 features_revert(array('namespace_search_api' => array('facetapi')));
 
-// Enable the globalredirect module.
+// Enable the google analytics module.
 // @note You must be careful as some modules use a namespace for their .module
 // different from the directory they reside.
 // @warning This function preforms a complete cache clear.
