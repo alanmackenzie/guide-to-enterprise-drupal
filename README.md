@@ -90,6 +90,21 @@ function bbcgf_workbench_alters_install() {
 * Common tasks, enable, disable, uninstalling modules, reverting features.
 * Using db_merge() to update configuration.
 
+```php
+
+@TODO Many more example update hooks.
+
+// Revert the facetapi section of the namespace_search_api feature.
+// @note Inspecting a feature module info file will give you the keys for the
+// sections in a feature module.
+features_revert(array('namespace_search_api' => array('facetapi')));
+
+// Enable the globalredirect module.
+// @note You must be careful as some modules use a namespace for their .module
+// different from the directory they reside.
+// @warning This function preforms a complete cache clear.
+module_enable(array('google_analytics'));
+```
 ### Building a full site
 
 * Devel generate.
