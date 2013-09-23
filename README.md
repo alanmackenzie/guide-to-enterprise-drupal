@@ -614,6 +614,7 @@ fi
 * Page caching
 * Back-end stampede
 * Do redirects in .htaccess to avoid bootstrapping Drupal
+* https://www.varnish-cache.org/vmod/querystring
 
 ### Form token myths.
 
