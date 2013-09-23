@@ -11,11 +11,12 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 
 ### Drupal is already productized
 
+>> Functionality is cheap, customisation is expensive.
+
 * Drupal gives you a lot for free, use it.
 * Delivering things ASAP lets you check your assertions with real world data. You can always improve them later on.
 * Engineers need to think very carefully before embarking on large pieces of customisation to Drupal. Often this is a failure to corretly [manage complexity](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html).
 
-* Ask Graham for catchy phrase around building new v alterting.
 
 ### Gorilla Platforms v Guerrilla Platforms
 
