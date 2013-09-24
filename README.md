@@ -276,7 +276,7 @@ if ($_ENV["AH_SITE_ENVIRONMENT"] == "prod") {
 }
 
 // Cache the homepage for 3 hours and every other page for 24 hours.
-if ($_SERVER['REQUEST_URI'] === '/') {
+if (drupal_is_front_page()) {
   $conf['page_cache_maximum_age'] = 10800;
 }
 else {
