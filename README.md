@@ -817,11 +817,14 @@ $conf['field_purge_batch_size'] = 10000;
  *
  * @note If you're disabling the automatic creation of redirects you probably
  * do not want pathauto to modify the alias of the target entity on update.
+ *
+ * @warning Caching of redirects can break your site. You may want to disable
+ * this functionality if you're creating redirects programmatically until you've
+ * verified that they're correct.
  */
 $conf['redirect_auto_redirect'] = FALSE;
 $conf['pathauto_update_action'] = FALSE;
-
-// TODO: Devel error_handler settings.
+$conf['redirect_page_cache'] = TRUE;
 
 /**
  * Locking API
