@@ -145,6 +145,7 @@ Lazy programmers use reverse engineering.
 * Inspecting alter hooks.
 * APM.
 * Reflection API.
+* Objects that implement ```__toString()```, db_select, parts of migrate. etc.
 
 ```php
 // Views has a fairly involved architecture, it may be quicker just to look
