@@ -416,7 +416,7 @@ if ($file->status == FILE_STATUS_PERMANENT) {
 
 ### Using ```time()``` instead of ```REQUEST_TIME```.
 
-```time()``` is not performant as it requires a [syscall](http://en.wikipedia.org/wiki/Syscall)
+```time()``` is not performant as it requires a [syscall](http://en.wikipedia.org/wiki/Syscall). You should only use ```time()``` if you require the precise time in seconds.
 
 ### Trusting the block cache.
 
