@@ -292,7 +292,7 @@ else {
 * returning correct results.
 
 ```php
-# Returns and exit code of 1, making it usable in shell scripts.
+# Prints an error message and sets the exit code to 1.
 drush_set_error('Test role has not been set');
 
 # Prints an error message but does not change the exit code making it useless in shell scripts.
