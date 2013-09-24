@@ -291,6 +291,14 @@ else {
 * log.ning correct results.
 * returning correct results.
 
+```php
+# Returns and exit code of 1, making it usable in shell scripts.
+drush_set_error('Test role has not been set');
+
+# Prints an error message but does not change the exit code making it useless in shell scripts.
+drush_log('Test role has not been set', 'error');
+```
+
 ### Static caching, memory issues and ```drupal_static_reset()```.
 
 * Running ```drupal_static_reset()``` inline with a request because your code has synchronisation issues is usually a code smell.
