@@ -398,7 +398,9 @@ print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="e
 
 ### Adding too many displays to a view.
 
-* When loading a view all displays are loaded.
+When loading a view all displays are loaded, separately. This means multiple fetches to your cache backend or database.
+
+// TODO: Verify + views core snippet/architecture?
 
 ### ```views_get_view()``` and static caching.
 
