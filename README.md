@@ -859,6 +859,14 @@ $conf['redirect_page_cache'] = TRUE;
 $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
 
 
+/**
+ * Fast 404.
+ *
+ * The contrib fast 404 module is more performant than core fast 404 functionality.
+ * @see https://drupal.org/project/fast_404
+ */
+#$conf['404_fast_paths_exclude'] = '/\/(?:styles)\//';
+#$conf['404_fast_paths'] = '/\.(?:txt|png|gif|jpe?g|css|js|ico|swf|flv|cgi|bat|pl|dll|exe|asp)$/i';
 ```
 
 ## Local Developer Configuration.
