@@ -104,6 +104,18 @@ features_revert(array('namespace_search_api' => array('facetapi')));
 // different from the directory they reside.
 // @warning This function preforms a complete cache clear.
 module_enable(array('google_analytics'));
+
+// Disable the devel, uglifyjs and backup_migrate modules and then uninstall them.
+$modules = array(
+  'devel',
+  'uglifyjs',
+  'backup_migrate',
+);
+
+module_disable($modules);
+
+drupal_uninstall_modules($modules);
+
 ```
 ### Building a full site
 
