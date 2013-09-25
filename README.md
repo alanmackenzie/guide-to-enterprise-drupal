@@ -410,6 +410,10 @@ When loading a view all displays are loaded, separately. This means multiple fet
 
 * Use $account.
 
+### Not cleaning up after module uninstalltion.
+
+* junk left in the variable table.
+
 ### Hardcoding values.
 
 Using hardcoded values make code harder to read and refactor. Be kind to your reviewer and use the [constants](https://api.drupal.org/api/drupal/constants/7) that Drupal supplies.
