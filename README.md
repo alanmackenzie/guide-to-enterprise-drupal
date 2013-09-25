@@ -119,7 +119,13 @@ drupal_uninstall_modules($modules);
 // @note It's a smart idea to use db_merge (INSERT or UPDATE) as the same code continue
 // to run on 'dirty' local development environments.
 db_merge('block')
-  ->key(array('theme' => 'namespace_theme', 'delta' => 'search-sorts', 'module' => 'search_api_sorts'))
+  ->key(
+    array(
+      'theme' => 'namespace_theme',
+      'delta' => 'search-sorts',
+      'module' => 'search_api_sorts'
+    )
+  )
   ->fields(array(
     'title' => '<none>',
     'region' => 'search_enabled_filters',
