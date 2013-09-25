@@ -182,6 +182,18 @@ foreach (views_get_all_views() as $view) {
 * Lack of coding standards huge red warning.
 * UUID example, adds an extra property to every entity :(.
 
+### Getting (kind of) RESTFUL
+
+* Seperate internal paths prefered over extra parameters. Do one thing and do it well.
+
+e.g.
+
+bad: node/12345/my-special-callback
+
+good: /namespace/my-special-callback
+
+This kind of mixing can get extremely complicated very fast and isn't performant.
+
 ## Tactical Patterns.
 
 ### Project Directory Layout.
