@@ -113,9 +113,20 @@ $modules = array(
 );
 
 module_disable($modules);
-
 drupal_uninstall_modules($modules);
 
+// Enable the search-sorts block.
+// @note It's a smart idea to use db_merge (INSERT or UPDATE) as the same code continue
+// to run on 'dirty' local development environments.
+db_merge('block')
+  ->key(array('theme' => 'namespace_theme', 'delta' => 'search-sorts', 'module' => 'search_api_sorts'))
+  ->fields(array(
+    'title' => '<none>',
+    'region' => 'search_enabled_filters',
+    'status' => 1,
+    'visibility' => 0,
+    'pages' => '*search/*',
+  ))->execute();
 ```
 ### Building a full site
 
