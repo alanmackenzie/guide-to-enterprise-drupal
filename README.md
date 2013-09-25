@@ -1033,3 +1033,4 @@ $options['structure-tables']['common'] = array(
 * block_list, get_block_by_regen.
 * overridable local developer configuration, not checked in.
 * attach js to render_array or do in hook init
+* Designing with teasers and entity displays in mind.
