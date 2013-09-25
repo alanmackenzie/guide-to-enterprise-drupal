@@ -885,11 +885,10 @@ $conf['redirect_page_cache'] = TRUE;
 /**
  * Locking API
  *
- * @TODO - Rewrite
- *   * memcache does not suffer from contention issues, quicker than database
- *   * minimising locking time is a very good thing
- *   * 'do not use mysql as a key value store'
- *   * be careful with LRU and deadlock
+ * Memcache is considerably more performant than MySQL so it is much less likely
+ * to suffer from lock contention that escaletes to deadlock.
+ *
+ * @warning You need to be careful memcache's LRU algorithm is not evicting lock objects.
  */
 $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
 
