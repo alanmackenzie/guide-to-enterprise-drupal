@@ -951,6 +951,9 @@ $conf['devel_error_handlers'] = array(0 => 0);
  * List of tables whose *data* is skipped by the 'sql-dump' and 'sql-sync'
  * commands when the "--structure-tables-key=common" option is provided.
  * You may add specific tables to the existing array or add a new element.
+ *
+ * @warning If you add a table that does not exist to this array, e.g. the
+ * watchdog table if you have never enabled dblog then drush will silently fail.
  */
 $options['structure-tables']['common'] = array(
   'history',
