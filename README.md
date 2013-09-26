@@ -133,6 +133,14 @@ db_merge('block')
     'visibility' => 0,
     'pages' => '*search/*',
   ))->execute();
+
+// Disable a number of views that come with the workbench module.
+$status = variable_get('views_defaults', array());
+$status['workbench_moderation'] = TRUE;
+$status['workbench_current_user'] = TRUE;
+$status['workbench_edited'] = TRUE;
+$status['workbench_recent_content'] = TRUE;
+variable_set('views_defaults', $status);
 ```
 ### Building a full site
 
