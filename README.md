@@ -912,6 +912,7 @@ $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
 $conf['views_ui_show_sql_query'] = TRUE;
 $conf['views_ui_show_sql_query_where'] = 'above';
 $conf['views_ui_show_performance_statistics'] = TRUE;
+$conf['views_sql_signature'] = TRUE;
 
 // @note This makes developing plugins much more pleasant, grep the views code base
 // for calls to vpr() and see for yourself.
