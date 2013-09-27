@@ -1051,3 +1051,4 @@ $options['structure-tables']['common'] = array(
 * attach js to render_array or do in hook init
 * Designing with teasers and entity displays in mind.
 * views Pager id conflicting.
+* designing with displays in mind.
