@@ -344,6 +344,7 @@ else {
 * interactive.
 * log.ning correct results.
 * returning correct results.
+* tee, nohup.
 
 ```php
 # Prints an error message and sets the exit code to 1.
