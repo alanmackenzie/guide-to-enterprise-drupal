@@ -953,6 +953,15 @@ $conf['stage_file_proxy_origin_dir'] = 'sites/example.com/files';
  */
 $conf['devel_error_handlers'] = array(0 => 0);
 
+/**
+ * Disable various forms of caching.
+ */
+$conf['cache'] = FALSE;
+$conf['block_cache'] = FALSE;
+$conf['page_cache_maximum_age'] = FALSE;
+$conf['preprocess_css'] = FALSE;
+$conf['preprocess_js'] = FALSE;
+$conf['views_skip_cache'] = FALSE;
 ```
 
 ## ```drushrc.php``` Configuration.
