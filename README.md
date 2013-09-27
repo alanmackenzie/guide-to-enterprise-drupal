@@ -333,6 +333,10 @@ else {
   $conf['page_cache_maximum_age'] = 86400;
 }
 ```
+### Using Shutdown functions
+
+* INSERTS etc dont have to be run inline with requests.
+* Workbench is a good example.
 
 ### Writing good drush commands at scale.
 
