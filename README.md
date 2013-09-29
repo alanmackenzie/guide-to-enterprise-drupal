@@ -1031,6 +1031,12 @@ $options['structure-tables']['common'] = array(
 * [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
 * [Observer](http://en.wikipedia.org/wiki/Observer_pattern)
 
+# Refactoring Drupal Code
+
+* drush views-analyze
+* [Drupal Lint](https://drupal.org/sandbox/alanmackenzie/2096735)
+* [Coder](https://drupal.org/project/coder)
+* [Views Usage Audit](http://drupal.org/sandbox/alanmackenzie/2099953)
 
 # Credits
 
@@ -1062,4 +1068,3 @@ $options['structure-tables']['common'] = array(
 * Designing with teasers and entity displays in mind.
 * views Pager id conflicting.
 * designing with displays in mind.
-* drush va
