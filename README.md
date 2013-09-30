@@ -992,7 +992,7 @@ $conf['block_cache'] = FALSE;
 $conf['page_cache_maximum_age'] = FALSE;
 $conf['preprocess_css'] = FALSE;
 $conf['preprocess_js'] = FALSE;
-$conf['views_skip_cache'] = FALSE;
+$conf['views_skip_cache'] = TRUE;
 
 // Overridden configuration go the file below. It should never be checked
 // into version control.
