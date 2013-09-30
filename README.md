@@ -993,6 +993,13 @@ $conf['page_cache_maximum_age'] = FALSE;
 $conf['preprocess_css'] = FALSE;
 $conf['preprocess_js'] = FALSE;
 $conf['views_skip_cache'] = FALSE;
+
+// Overridden configuration go the file below. It should never be checked
+// into version control.
+$path = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local-environment-overrides.config.inc';
+if (file_exists($path)) {
+  include $path;
+}
 ```
 
 ## ```drushrc.php``` Configuration.
