@@ -17,7 +17,6 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 * Delivering things ASAP lets you check your assertions with real world data. You can always improve them later on.
 * Engineers need to think very carefully before embarking on large pieces of customisation to Drupal. Often this is a failure to corretly [manage complexity](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html).
 
-
 ### Gorilla Platforms v Guerrilla Platforms
 
 * Tightly coupled code and content is a bad idea.
@@ -518,6 +517,37 @@ TODO:
 * Documenting css
 * Drupal centric css structure.
 
+### Designing with entity view modes in mind.
+
+* Code reuse/consistency.
+* Do more work config rather than in templates.
+* display suite, custom view modes extra layout and formatting options.
+* If you ever find yourself hiding fields ask yourself if you should be using a display.
+* Don't default to the fields display handler when using views, unless it's not a representation of a single entity or combinations of fields accross multiple entities.
+* Displays are for more than just visual elements. You can have a data export display:
+
+```php
+function drush_bbcgf_dev_drush_command_bbcgf_json_dump() {
+
+  $query = new EntityFieldQuery();
+  $results = $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'recipe')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->propertyOrderBy('created', 'DESC')
+    ->range(0, 2)
+    ->execute();
+
+  $nodes = node_load_multiple(array_keys($results['node']));
+
+  foreach ($nodes as $id => $node) {
+    // Second parameter is the display mode.
+    $nodes[$id] = node_view($node, 'data-export');
+  }
+
+  print drupal_json_encode($nodes);
+}
+
+```
 ### Use Drupal markup.
 
 Make use of the default markup provided by Drupal where possible. It provides a standardised setup that allows for rapid development and avoids the need for large numbers of template files / theme overrides.
