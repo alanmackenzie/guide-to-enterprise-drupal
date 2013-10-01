@@ -88,6 +88,7 @@ function bbcgf_workbench_alters_install() {
 * "Finished performing updates." Is a lie.
 * Common tasks, enable, disable, uninstalling modules, reverting features.
 * Using db_merge() to update configuration.
+* Do not do anything but a trivial number of INSERTS, import from CSV etc is a bad idea.
 
 ```php
 
