@@ -1046,7 +1046,6 @@ $options['structure-tables']['common'] = array(
   'cache_views_data',
 );
 
-
 // @TODO Setting default flags.
 ```
 # Patterns in Drupal
@@ -1071,6 +1070,8 @@ $options['structure-tables']['common'] = array(
 
 # Refactoring Drupal Code
 
+* Write tests first where possible.
+* Refactoring "inline" with normal work can be dangerous as it balloon tasks and lead to unexpected changes.
 * drush views-analyze
 * [Drupal Lint](https://drupal.org/sandbox/alanmackenzie/2096735)
 * [Coder](https://drupal.org/project/coder)
