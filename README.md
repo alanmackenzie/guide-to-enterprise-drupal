@@ -16,6 +16,7 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 * Drupal gives you a lot for free, use it.
 * Delivering things ASAP lets you check your assertions with real world data. You can always improve them later on.
 * Engineers need to think very carefully before embarking on large pieces of customisation to Drupal. Often this is a failure to corretly [manage complexity](http://www.cs.nott.ac.uk/~cah/G51ISS/Documents/NoSilverBullet.html).
+* Traditional service/waterfall model does not play to Drupal's advantages. Develop requirements in dialogue with the business, don't let this happen in isolation.
 
 ### Gorilla Platforms v Guerrilla Platforms
 
