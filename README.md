@@ -373,6 +373,11 @@ drush_log('Test role has not been set', 'error');
 
 ## Tactical Anti-Patterns
 
+### Not leveraging the menu system.
+
+* menu_get_object(), don't write garbage with arg().
+* menu_execute_active_handler() hijacking example.
+
 ### Forgetting to filter the output of ```variable_get()```.
 
 Even if you are capturing the value of this persistant variable in ```$conf[]``` or setting it via ```variable_set()``` in an update hook it is best to code defensively in case a system settings form is added is added later on.
