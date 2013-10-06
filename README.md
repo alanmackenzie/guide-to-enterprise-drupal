@@ -65,6 +65,8 @@ The Admin views module is an good starting point.
 
 * example.
 * system, contrib, customisation.
+* Particular problem with hook_init()/hook_boot() and form alters.
+* Letting contrib run first is a good habit to get into.
 
 ```php
 /**
