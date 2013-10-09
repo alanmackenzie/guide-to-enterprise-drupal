@@ -1116,3 +1116,4 @@ $options['structure-tables']['common'] = array(
 * views Pager id conflicting.
 * designing with displays in mind.
 * Using the most sepcific alter function. Helper funciton good for unit testing, less likely to run in unexpected places.
+* Breakdown of different caches in the appendix.
