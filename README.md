@@ -1117,3 +1117,4 @@ $options['structure-tables']['common'] = array(
 * designing with displays in mind.
 * Using the most sepcific alter function. Helper funciton good for unit testing, less likely to run in unexpected places.
 * Breakdown of different caches in the appendix.
+* install profile needs to be kept up to date else 'ghost' modules will cause you problems when uninstalling dependencies.
