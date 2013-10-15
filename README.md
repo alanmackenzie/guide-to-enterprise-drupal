@@ -21,8 +21,8 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 ### Gorilla Platforms v Guerrilla Platforms
 
 * Tightly coupled code and content is a bad idea.
-* Distributed, common thread.
-* reusable
+* Distributed, common thread instead of single monolithic platform.
+* reusable, flexible.
 * step down graph.
 
 ### Migrating to Drupal.
