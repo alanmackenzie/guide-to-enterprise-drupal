@@ -25,6 +25,11 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 * reusable, flexible.
 * step down graph.
 
+### Drupal doesn't come with a moat
+
+* Most enterprise products come with some kind of vendor lock-in. Drupal has a healthy ecosystem of suppliers.
+* Letting core and contrib do the heavy lifting and open sourcing as much custom code as possible creates a platform with very healthy long term prospects.
+
 ### Migrating to Drupal.
 
 Drupal has an excellent [migration framework](https://drupal.org/project/migrate), you should steer well clear of any traditional [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load) process.
