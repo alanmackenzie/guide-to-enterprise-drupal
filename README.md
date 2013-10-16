@@ -1124,3 +1124,4 @@ $options['structure-tables']['common'] = array(
 * Breakdown of different caches in the appendix.
 * install profile needs to be kept up to date else 'ghost' modules will cause you problems when uninstalling dependencies.
 * Multiple calls to module_enable/module_disable is a bad idea.
+* drush rr --no-cache-clear option.
