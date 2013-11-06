@@ -21,9 +21,14 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 ### Gorilla Platforms v Guerrilla Platforms
 
 * Tightly coupled code and content is a bad idea.
-* Distributed, common thread.
-* reusable
+* Distributed, common thread instead of single monolithic platform.
+* reusable, flexible.
 * step down graph.
+
+### Drupal doesn't come with a moat
+
+* Most enterprise products come with some kind of vendor lock-in. Drupal has a healthy ecosystem of suppliers.
+* Letting core and contrib do the heavy lifting and open sourcing as much custom code as possible creates a platform with very healthy long term prospects.
 
 ### Migrating to Drupal.
 
@@ -1119,3 +1124,4 @@ $options['structure-tables']['common'] = array(
 * Breakdown of different caches in the appendix.
 * install profile needs to be kept up to date else 'ghost' modules will cause you problems when uninstalling dependencies.
 * Multiple calls to module_enable/module_disable is a bad idea.
+* drush rr --no-cache-clear option.
