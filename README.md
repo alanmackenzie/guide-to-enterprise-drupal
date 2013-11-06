@@ -1005,7 +1005,7 @@ $conf['views_skip_cache'] = TRUE;
 
 // Overridden configuration go the file below. It should never be checked
 // into version control.
-$path = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local-environment-overrides.config.inc';
+$path = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'local-overrides.config.inc';
 if (file_exists($path)) {
   include $path;
 }
