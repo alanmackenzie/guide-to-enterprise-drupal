@@ -1125,3 +1125,4 @@ $options['structure-tables']['common'] = array(
 * install profile needs to be kept up to date else 'ghost' modules will cause you problems when uninstalling dependencies.
 * Multiple calls to module_enable/module_disable is a bad idea.
 * drush rr --no-cache-clear option.
+* hook_hook_info() example.
