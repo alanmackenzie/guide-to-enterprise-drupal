@@ -1126,3 +1126,4 @@ $options['structure-tables']['common'] = array(
 * Multiple calls to module_enable/module_disable is a bad idea.
 * drush rr --no-cache-clear option.
 * hook_hook_info() example.
+* views stored in code v views stored in the db.
