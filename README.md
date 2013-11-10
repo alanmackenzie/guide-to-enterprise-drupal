@@ -1128,3 +1128,4 @@ $options['structure-tables']['common'] = array(
 * hook_hook_info() example.
 * views stored in code v views stored in the db.
 * Schema api foreign keys.
+* DrupalFakeCache
