@@ -958,6 +958,21 @@ $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
  */
 #$conf['404_fast_paths_exclude'] = '/\/(?:styles)\//';
 #$conf['404_fast_paths'] = '/\.(?:txt|png|gif|jpe?g|css|js|ico|swf|flv|cgi|bat|pl|dll|exe|asp)$/i';
+
+/**
+ * Agrcache.
+ *
+ * CSS & JS aggegation can cause deadlock in the variables table under high
+ * contention, agrcache prevents this from happening by building the aggregates
+ * in a lazy fashion rather than inline. Using Agrcache also offers improved
+ * performance as it does not rely on calls to file_exists().
+ *
+ * @warning Extra configuration is needed to make agrcache work with fast_404.
+ */
+$conf['fast_404_string_whitelisting'] = array(
+  '/files/css/css_',
+  '/files/js/js_',
+);
 ```
 
 ## Local Developer Configuration.
