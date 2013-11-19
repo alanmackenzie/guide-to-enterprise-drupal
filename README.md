@@ -1157,3 +1157,4 @@ $options['structure-tables']['common'] = array(
 * Schema api foreign keys.
 * DrupalFakeCache
 * QueueUI.
+* File structure outside the docroot, test, vagrant etc.
