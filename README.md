@@ -973,6 +973,18 @@ $conf['fast_404_string_whitelisting'] = array(
   '/files/css/css_',
   '/files/js/js_',
 );
+
+
+/**
+ * Rate.
+ *
+ * The rate module uses a DrupalQueue to enqueue votes for later delete if it detects
+ * the vote as coming from IP addresses belonging to bots. This queue can grow very
+ * large if left with the default delete limit of 25.
+ *
+ * @note If rate used hook_cron_queue_info() this would be less of a pain point.
+ */
+$conf['rate_cron_delete_limit'] = 1000;
 ```
 
 ## Local Developer Configuration.
@@ -1144,3 +1156,4 @@ $options['structure-tables']['common'] = array(
 * views stored in code v views stored in the db.
 * Schema api foreign keys.
 * DrupalFakeCache
+* QueueUI.
