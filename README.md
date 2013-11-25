@@ -1158,3 +1158,7 @@ $options['structure-tables']['common'] = array(
 * DrupalFakeCache
 * QueueUI.
 * File structure outside the docroot, test, vagrant etc.
+* Don't put aliases in templates, l() will point node/1234 to the right alias automatically.
+* Editorial freedom using variable_get() with the above.
+* Removing magic constants example: ->fieldCondition('field_bbcgf_chef', 'target_id', array_keys(array(18 => 'Gordon Ramsay')), '<>')
+
