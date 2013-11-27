@@ -392,12 +392,12 @@ Even if you are capturing the value of this persistant variable in ```$conf[]```
 
 __Wrong Example:__
 ```php
-print '<a href="' . variable_get('marketing_footer_link') . '" rel="external">';
+print '<a href="' . variable_get('namespace_marketing_footer_link') . '" rel="external">';
 ```
 
 _Right Example:_
 ```php
-print '<a href="' . check_url(variable_get('marketing_footer_link')) . '" rel="external">';
+print '<a href="' . check_url(variable_get('namespace_marketing_footer_link')) . '" rel="external">';
 ```
 
 ### Abusing ```variable_set()```.
