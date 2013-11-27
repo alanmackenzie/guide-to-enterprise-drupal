@@ -1162,3 +1162,4 @@ $options['structure-tables']['common'] = array(
 * Editorial freedom using variable_get() with the above.
 * Removing magic constants example: ->fieldCondition('field_bbcgf_chef', 'target_id', array_keys(array(18 => 'Gordon Ramsay')), '<>')
 * More on magic constants: ->fieldCondition('field_bbcgf_publication_date', 'value', strtotime('November 2007'), '<')
+* Features internals, config as entities delete/creation on revert, manually editing feature files. The structure of a feature file: .info etc.
