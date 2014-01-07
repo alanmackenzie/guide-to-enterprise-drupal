@@ -1164,3 +1164,4 @@ $options['structure-tables']['common'] = array(
 * More on magic constants: ->fieldCondition('field_bbcgf_publication_date', 'value', strtotime('November 2007'), '<')
 * Features internals, config as entities delete/creation on revert, manually editing feature files. The structure of a feature file: .info etc.
 * No namespace in descriptions seen by editorial or end users.
+* views tags used in template file names.
