@@ -1108,6 +1108,9 @@ $options['structure-tables']['common'] = array(
 * [Aspect Oriented Programming (AOP)](http://en.wikipedia.org/wiki/Aspect_oriented_programming)
 * [Observer](http://en.wikipedia.org/wiki/Observer_pattern)
 
+## Security
+
+* [Synchronizer Token Pattern](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet#General_Recommendation:_Synchronizer_Token_Pattern)
 # Refactoring Drupal Code
 
 * Write tests first where possible.
