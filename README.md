@@ -1168,3 +1168,4 @@ $options['structure-tables']['common'] = array(
 * Features internals, config as entities delete/creation on revert, manually editing feature files. The structure of a feature file: .info etc.
 * No namespace in descriptions seen by editorial or end users.
 * views tags used in template file names.
+* Using the correct db_* functions. db_query() is only for maximum control.
