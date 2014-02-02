@@ -1169,3 +1169,4 @@ $options['structure-tables']['common'] = array(
 * No namespace in descriptions seen by editorial or end users.
 * views tags used in template file names.
 * Using the correct db_* functions. db_query() is only for maximum control.
+* Strategies for relying on external services: Varnish middleware, queues & local caching.
