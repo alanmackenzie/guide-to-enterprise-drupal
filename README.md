@@ -1088,7 +1088,7 @@ $options['structure-tables']['common'] = array(
 
 // @TODO Setting default flags.
 ```
-# Patterns in Drupal
+# General Software Engineering Patterns in Drupal
 
 ## General
 
@@ -1111,6 +1111,7 @@ $options['structure-tables']['common'] = array(
 ## Security
 
 * [Synchronizer Token Pattern](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet#General_Recommendation:_Synchronizer_Token_Pattern)
+
 # Refactoring Drupal Code
 
 * Write tests first where possible.
