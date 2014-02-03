@@ -792,7 +792,7 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 * memory_limit and max_execution_time exist for a reason.
 * cron is not the answer, timeouts, server resource usage impact on end user, easier to scale separate logical components
 
-# Example Drupal Configuration
+# Enterprise Drupal Configuration
 
 ## Production Configuration.
 
