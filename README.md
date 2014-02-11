@@ -792,7 +792,7 @@ Increasing PHP's ```memory_limit``` directive beyond 128M should be treated as v
 * memory_limit and max_execution_time exist for a reason.
 * cron is not the answer, timeouts, server resource usage impact on end user, easier to scale separate logical components
 
-# Example Drupal Configuration
+# Enterprise Drupal Configuration
 
 ## Production Configuration.
 
@@ -1088,7 +1088,7 @@ $options['structure-tables']['common'] = array(
 
 // @TODO Setting default flags.
 ```
-# Patterns in Drupal
+# General Software Engineering Patterns in Drupal
 
 ## General
 
@@ -1111,6 +1111,7 @@ $options['structure-tables']['common'] = array(
 ## Security
 
 * [Synchronizer Token Pattern](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet#General_Recommendation:_Synchronizer_Token_Pattern)
+
 # Refactoring Drupal Code
 
 * Write tests first where possible.
@@ -1169,3 +1170,5 @@ $options['structure-tables']['common'] = array(
 * No namespace in descriptions seen by editorial or end users.
 * views tags used in template file names.
 * Using APC for anything other than opcode caching.
+* Using the correct db_* functions. db_query() is only for maximum control.
+* Strategies for relying on external services: Varnish middleware, queues & local caching.
