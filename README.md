@@ -1172,3 +1172,4 @@ $options['structure-tables']['common'] = array(
 * Using APC for anything other than opcode caching.
 * Using the correct db_* functions. db_query() is only for maximum control.
 * Strategies for relying on external services: Varnish middleware, queues & local caching.
+* Module layout, remember to split admin.inc etc. Autoloading via hook_menu & hook_hook_info().
