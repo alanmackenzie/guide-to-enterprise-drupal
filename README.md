@@ -1174,3 +1174,4 @@ $options['structure-tables']['common'] = array(
 * Strategies for relying on external services: Varnish middleware, queues & local caching.
 * Module layout, remember to split admin.inc etc. Autoloading via hook_menu & hook_hook_info().
 * Drupal & WEM.
+* EFQ no left join etc.
