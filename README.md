@@ -1175,3 +1175,4 @@ $options['structure-tables']['common'] = array(
 * Module layout, remember to split admin.inc etc. Autoloading via hook_menu & hook_hook_info().
 * Drupal & WEM.
 * EFQ no left join etc.
+* Drupal contrib scalability failure: fivestar, node_revision_delete, node_revision_restrict.
