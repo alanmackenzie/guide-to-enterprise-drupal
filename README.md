@@ -1176,3 +1176,4 @@ $options['structure-tables']['common'] = array(
 * Drupal & WEM.
 * EFQ no left join etc.
 * Drupal contrib scalability failure: fivestar, node_revision_delete, node_revision_restrict.
+* Rate module botscout IP ban.
