@@ -25,7 +25,22 @@ Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/
 * reusable, flexible.
 * step down graph.
 
-### Drupal doesn't come with a moat
+### Drupal and WEM (Web Experience Management)
+
+* Most enterprises grew their online presence organically, this leads to a fractured user experience due to the variety of products in use and the problems integrating these system.
+* Propriety systems exacerbate the issue due to licensing costs, lack of openness leads to engineering forcing negative product decisions due to implementation time. 
+* Drupal is incredibly flexible and can potentially do anything. An engineer used to Drupal would not believe how unflexible propriety systems and the companies behind them can be.
+* Drupal places a lot of complexity "at the edge" which makes your site massively flexible, it's not just a display layer.
+* To borrow Acquia's marketting material: Commerce, Community, Content. Drupal can do it all.
+
+* Micro case studies:
+
+* BBCWW, shift from publishing to highly interactive experience. Paywalls, personalisation, SASS.
+* Lush, Ecommerce is the heart of the business but they have tonnes of content.
+
+// @TODO: Talk to someone at Lush who does Drupal...
+
+### Drupal doesn't come with a moat.
 
 * Most enterprise products come with some kind of vendor lock-in. Drupal has a healthy ecosystem of suppliers.
 * Letting core and contrib do the heavy lifting and open sourcing as much custom code as possible creates a platform with very healthy long term prospects.
