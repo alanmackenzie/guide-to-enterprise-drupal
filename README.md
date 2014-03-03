@@ -965,6 +965,26 @@ $conf['redirect_page_cache'] = TRUE;
  */
 $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock-code.inc';
 
+/**
+ * Form API
+ *
+ * Drupal keeps a secure token for instance of every form, this is to prevent CSRF. The tokens
+ * are stored in cache_form, the standard advice is to use a database backend for storage.
+ *
+ * The cache object contains a serialized copy of the form and often related entities so
+ * it can grow extremely large.
+ *
+ * By default Drupal will clear stale cache_form objects on cron run, the objects have a TTL
+ * of 6 hours, below we have lowered this to 3 hours.
+ *
+ * @note For continous purging of stale items use: https://drupal.org/project/safe_cache_form_clear
+ *
+ * @warning Despite the name it's worth noting that cache_form requires presistant storage, 
+ * think carefully about fail-over and LRU before you use a backend like memcache.
+ */
+// Small core patch required.
+// https://drupal.org/node/2091511
+$conf['form_cache_expiry'] = 10800;
 
 /**
  * Fast 404.
