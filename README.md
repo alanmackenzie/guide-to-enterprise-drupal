@@ -7,6 +7,8 @@ External contribution is welcome and encouraged.
 
 Overwhelmed? Read the [Introduction to Software Engineering](https://github.com/alanmackenzie/intro-to-software-eng).
 
+License? Creative Commons Attribution-ShareAlike 3.0.
+
 # Project Patterns
 
 ### Drupal is already productized
