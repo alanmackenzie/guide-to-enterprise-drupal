@@ -276,12 +276,10 @@ docroot
 |   |   |   |-- custom
 |   |   |   |-- dev-tools
 |   |   |   |-- features
-|   |   |   |-- migration
-|   |   |   `-- patched
+|   |   |   `-- migration
 |   |   `-- themes
 |   |       |-- contrib
-|   |       |-- custom
-|   |       `-- patched
+|   |       `-- custom
 |   |-- example.com
 |   |   |-- files
 |   |   `-- inc
@@ -297,7 +295,7 @@ The drush directory allows for command files to be added to the repository in si
 
 The modules directory is further divided into separate sub-directories, this makes reviewing the health of any given Drupal project much simpler. A healthy project will have few modules in contrib or patched and the majority of the sites complexity in contrib.
 
-Modules in the patched directory should always have any patches applied to them checked into the root of that modules directory.
+Patched modules should always have any patches applied to them checked into the root of that modules directory.
 
 When moving modules around the directory structure you will need to use the [registry_rebuild](https://drupal.org/project/registry_rebuild) drush command. Drupal does not expect modules to be moved around underneath it.
 
