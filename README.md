@@ -1215,3 +1215,4 @@ $options['structure-tables']['common'] = array(
 * EFQ no left join etc.
 * Drupal contrib scalability failure: fivestar, node_revision_delete, node_revision_restrict.
 * Rate module botscout IP ban.
+* Sub-directories per content type subdirectories for file fields, painful at scale.
