@@ -1216,3 +1216,4 @@ $options['structure-tables']['common'] = array(
 * Drupal contrib scalability failure: fivestar, node_revision_delete, node_revision_restrict.
 * Rate module botscout IP ban.
 * Sub-directories per content type subdirectories for file fields, painful at scale.
+* $conf['update_max_fetch_time'] = 60, large number of modules will cause update process to timeout.
