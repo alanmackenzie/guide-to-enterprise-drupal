@@ -1023,6 +1023,14 @@ $conf['fast_404_string_whitelisting'] = array(
  * @note If rate used hook_cron_queue_info() this would be less of a pain point.
  */
 $conf['rate_cron_delete_limit'] = 1000;
+
+/**
+ * Module update status.
+ *
+ * If you have a large number of modules (remember this includes features) then you can end
+ * up with the update process timing out, leaving you with only partial data. 
+ */
+$conf['update_max_fetch_time'] = 60;
 ```
 
 ## Local Developer Configuration.
@@ -1216,4 +1224,3 @@ $options['structure-tables']['common'] = array(
 * Drupal contrib scalability failure: fivestar, node_revision_delete, node_revision_restrict.
 * Rate module botscout IP ban.
 * Sub-directories per content type subdirectories for file fields, painful at scale.
-* $conf['update_max_fetch_time'] = 60, large number of modules will cause update process to timeout.
