@@ -434,7 +434,7 @@ print '<a href="' . check_url(variable_get('namespace_marketing_footer_link')) .
 
 ### Using ```exit()``` instead of ```drupal_exit()```.
 
-```exit()``` does not fire hook_exit. You must use ```drupal_exit()``` instead.
+```exit()``` does not fire ```hook_exit```. You must use ```drupal_exit()``` instead.
 
 ### Using ```static $cache``` instead of ```drupal_static()```.
 
