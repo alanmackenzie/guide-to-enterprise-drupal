@@ -1224,3 +1224,4 @@ $options['structure-tables']['common'] = array(
 * Drupal contrib scalability failure: fivestar, node_revision_delete, node_revision_restrict.
 * Rate module botscout IP ban.
 * Sub-directories per content type subdirectories for file fields, painful at scale.
+* Internal link then redirect rather than remote call blocking page load.
