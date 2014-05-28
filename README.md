@@ -1225,3 +1225,4 @@ $options['structure-tables']['common'] = array(
 * Rate module botscout IP ban.
 * Sub-directories per content type subdirectories for file fields, painful at scale.
 * Internal link then redirect rather than remote call blocking page load.
+* Bootstrap a drupal env with drush php-script.
