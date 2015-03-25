@@ -586,7 +586,7 @@ Make use of the default markup provided by Drupal where possible. It provides a 
 
 This does not mean you cannot cut down the often bloated Drupal markup, fewer nodes in the DOM is of course a good thing, especially when in comes to JavaScript. Instead be intelligent about it, just because you don't need an extra wrapper at this point does not mean it will not be useful for styling, or hooking into with JavaScript, in the future.
 
-The same goes for stripping out the extra classes and ids added by Drupal, remove them for a reason rather then for the sake of it. Additionally, Contrib modules sometimes make assumptions about the markup available.
+The same goes for stripping out the extra classes and ids added by Drupal, remove them for a reason rather than for the sake of it. Additionally, Contrib modules sometimes make assumptions about the markup available.
 
 ### JavaScript.
 
