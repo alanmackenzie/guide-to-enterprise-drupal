@@ -1227,3 +1227,5 @@ $options['structure-tables']['common'] = array(
 * Internal link then redirect rather than remote call blocking page load.
 * Bootstrap a drupal env with drush php-script.
 * context based tempaltes: theme_hook_suggestions
+* Two step migration.
+* Secure cookies.
